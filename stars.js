@@ -3,10 +3,14 @@ let flock;
     function setup() {
       let canvas = createCanvas(windowWidth, windowHeight);
      
-      
       flock = new Flock();
       let boidAmount = windowWidth/8;
-    
+
+      if (boidAmount > 100){
+        boidAmout = 100;
+      } else {
+        boidAmount = boidAmount;
+      }
 
       for (let i = 0; i < boidAmount; i++) {
         let b = new Boid(width / 2, height / 2);
