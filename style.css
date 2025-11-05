@@ -1,41 +1,53 @@
 @font-face {
-    font-family: 'AvGe', sans-serif;
-    src: url('assets/AvoidanceGenevraRegular.ttf');
+    font-family: 'AvGe';
+    src: url('assets/AvoidanceGenevraRegular.ttf') format('truetype');
 }
 
 body {
-  margin: 0;
-  padding: 0;
   user-select: none;
   font-family: 'AvGe', sans-serif;
+   margin-left: 3vw;
+   margin-right: 3vw;
 }
+
 canvas {
     position: fixed;
     top: 0;
     left: 0;
   z-index: -1;
-  border: red solid 2px;
 }
 
 h1 {
-    border: yellow dashed 2px;
-    font-size: 27vh;
-    line-height: 22vh;
-    letter-spacing: -.8rem;
-    font-weight: normal
+    /* border: yellow dashed 2px; */
+    /* letter-spacing: -.8rem; */
+    /* font-weight: normal; */
+    /* display: block; */
 }
 
 h1#index-title {
-    position: absolute;
-    margin-left: 3vw;
-    display: inline;
+ font-size: 200px;
+ position: relative;
+ top: -12vh;
+    line-height: 180px;
+  
    width: 82vw;
 }
 
+#myFace {
+    position: sticky;
+    width: 400px;
+    right: 25%;
+    top: 25%;
+    border-radius: 20px;
+   
+}
+
 p {
-    border: lightgreen solid 2px;
+    /* border: lightgreen solid 2px; */
     font-family: 'AvGe', sans-serif;
-    font-size: 100px;
+    font-size: 30px;
+    display: block;
+   
 }
 
 ::-webkit-scrollbar {
