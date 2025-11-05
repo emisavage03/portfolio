@@ -1,12 +1,44 @@
-html, body {
+@font-face {
+    font-family: 'AvGe', sans-serif;
+    src: url('assets/AvoidanceGenevraRegular.ttf');
+}
+
+body {
   margin: 0;
   padding: 0;
-  
+  user-select: none;
+  font-family: 'AvGe', sans-serif;
 }
 canvas {
-  display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+  z-index: -1;
+  border: red solid 2px;
+}
+
+h1 {
+    border: yellow dashed 2px;
+    font-size: 27vh;
+    line-height: 22vh;
+    letter-spacing: -.8rem;
+    font-weight: normal
+}
+
+h1#index-title {
+    position: absolute;
+    margin-left: 3vw;
+    display: inline;
+   width: 82vw;
+}
+
+p {
+    border: lightgreen solid 2px;
+    font-family: 'AvGe', sans-serif;
+    font-size: 100px;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+

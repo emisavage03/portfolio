@@ -1,5 +1,4 @@
 let flock;
-let myRandom;
 
     function setup() {
       let canvas = createCanvas(windowWidth, windowHeight);
@@ -138,7 +137,7 @@ let myRandom;
           
         } else {
          
-           let myBrightness = 40;
+           let myBrightness = 70;
         let mySaturation = 0;
       
     this.color = color(240, mySaturation, myBrightness);
