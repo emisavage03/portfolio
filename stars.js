@@ -16,7 +16,7 @@ let flock;
     }
 
     function draw() {
-      background(90);
+      background(95);
       flock.run();
       
     }
