@@ -8,6 +8,7 @@ body {
   font-family: 'AvGe', sans-serif;
    margin-left: 3vw;
    margin-right: 3vw;
+   cursor: url('assets/cursorIcon1.svg') 16 16, auto;
 }
 
 canvas {
@@ -27,10 +28,7 @@ h1 {
 h1#index-title {
  font-size: 200px;
  position: relative;
- top: -12vh;
-    line-height: 180px;
-  
-   width: 82vw;
+ line-height: 180px;
 }
 
 #myFace {
@@ -45,9 +43,18 @@ h1#index-title {
 p {
     /* border: lightgreen solid 2px; */
     font-family: 'AvGe', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     display: block;
    
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #FF0040;
+    cursor: url('assets/cursorIconHover.svg') 16 16, pointer;
 }
 
 ::-webkit-scrollbar {
