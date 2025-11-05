@@ -5,7 +5,7 @@ let flock;
      
       
       flock = new Flock();
-      let boidAmount = windowWidth/6;
+      let boidAmount = windowWidth/8;
     
 
       for (let i = 0; i < boidAmount; i++) {
