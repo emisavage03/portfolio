@@ -127,11 +127,11 @@ class Boid {
         let d = p5.Vector.dist(this.position, mousePos);
 
         if (d < avoidDistance && d > 0) {
-            let myBrightness = 100;
-            let mySaturation = 100;
-            this.color = color(345, mySaturation, myBrightness);
+            let myBrightness = 82;
+            let mySaturation = 95;
+            this.color = color(94, mySaturation, myBrightness);
         } else {
-            let myBrightness = 70;
+            let myBrightness = 75;
             let mySaturation = 0;
             this.color = color(240, mySaturation, myBrightness);
 

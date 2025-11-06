@@ -3,12 +3,18 @@
     src: url('assets/AvoidanceGenevraRegular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'AHG';
+    src: url('assets/AlteHaasGroteskBold.ttf') format('truetype');
+}
+
 body {
   user-select: none;
-  font-family: 'AvGe', sans-serif;
+  font-family: 'AHG', sans-serif;
    margin-left: 3vw;
    margin-right: 3vw;
-   cursor: url('assets/cursorIcon1.svg') 16 16, auto;
+   cursor: url('assets/cursorIcon2.svg') 16 16, auto;
+   color: black;
 }
 
 canvas {
@@ -18,18 +24,21 @@ canvas {
   z-index: -1;
 }
 
-h1 {
+/* h1 {
     /* border: yellow dashed 2px; */
     /* letter-spacing: -.8rem; */
     /* font-weight: normal; */
-    /* display: block; */
-}
+    /* display: block; 
+} 
+*/
 
 h1#index-title {
  font-size: 200px;
  position: relative;
  line-height: 180px;
+ margin-bottom: 250px;
 }
+
 
 #myFace {
     position: sticky;
@@ -42,19 +51,72 @@ h1#index-title {
 
 p {
     /* border: lightgreen solid 2px; */
-    font-family: 'AvGe', sans-serif;
+    font-family: 'AHG', sans-serif;
     font-size: 24px;
-    display: block;
-   
 }
 
 a {
     color: black;
+    transition: color 0.15s ease;
 }
 
 a:hover {
-    color: #FF0040;
-    cursor: url('assets/cursorIconHover.svg') 16 16, pointer;
+    color: #61d10a;
+    cursor: url('assets/cursorIconHover2B.svg') 16 16, pointer;
+}
+
+div#highlights {
+    position: relative;
+    top: 150px;
+    display: grid;
+    justify-content: space-between;
+    border: red solid 2px;
+    grid-template-columns: auto auto auto;
+   gap: auto;
+}
+
+img.highlight {
+    height: 18rem;
+    filter: saturate(0);
+    transition: filter 0.5s ease;
+}
+
+img.highlight:hover {
+    filter: saturate(1);
+    cursor: url('assets/cursorIconHover.svg') 16 16, pointer;   
+    transition: filter 0.5s ease;
+}
+
+h2 {
+    font-size: 60px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: black solid 5px;
+    margin: 0px;
+}
+
+/* div.projectlist {
+display: grid;
+justify-content: space-between;
+
+} */
+
+p.inline {
+    display: inline-block;
+}
+
+p.left {
+    position: relative;
+    left: 0;
+}
+
+p.right {
+    position: absolute;
+    right: 3vw;
 }
 
 ::-webkit-scrollbar {
