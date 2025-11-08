@@ -144,6 +144,7 @@ class Boid {
         push();
         translate(this.position.x, this.position.y);
         rotate(-theta);
+       
         beginShape();
 
         vertex(0, this.size * 2.6);
