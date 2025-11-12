@@ -152,7 +152,7 @@ p.right {
 .row {
     display: grid;
     grid-template-columns: auto auto;
-    
+    padding: 10px;
 }
 
 ::-webkit-scrollbar {
