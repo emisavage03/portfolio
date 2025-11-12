@@ -30,7 +30,7 @@ font-size: 15px;
 
 #top {
 width: 95vw;
-margin-top: -4vh;
+top: 1vh;
 }
 
 #bottom {
@@ -40,20 +40,23 @@ rotate: 180deg;
 }
 
 #left {
-width: 92vh;
-left: -42vh;
+width: 90vh;
+left: -43vh;
 top: 48.5%;
 rotate: -90deg;
 }
 
 #right {
-width: 92vh;
-right: -42vh;
+width: 90vh;
+right: -43vh;
 top: 48.5%;
 rotate: 90deg;
 }
 
 #main {
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
     width: 90vw;
    height: 90vh;
    overflow-x: hidden;
@@ -157,9 +160,15 @@ p.right {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
+    text-wrap: balance;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+body {
+    color: blue;
+}
+}
