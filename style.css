@@ -172,6 +172,10 @@ body {
     color: blue;
 }
 
+canvas {
+position: absolute;
+}
+
 p {
     font-size: 3vw;
 }
