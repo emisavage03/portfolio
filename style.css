@@ -15,14 +15,17 @@ body {
 .border {
     display: grid;
 position: absolute;
+overflow: clip;
+white-space: nowrap;
+}
+
+.borderlink {
 color: rgba(255, 0, 95, 0.5);
-font-family: 'Neuton', serif;
+font-family: 'Libre Baskerville', serif;
 font-style: italic;
 font-weight: bold;
 letter-spacing: -1px;
 font-size: 15px;
-overflow: clip;
-white-space: nowrap;
 }
 
 #top {
