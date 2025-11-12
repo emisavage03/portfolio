@@ -1,20 +1,62 @@
-@font-face {
-    font-family: 'AvGe';
-    src: url('assets/AvoidanceGenevraRegular.ttf') format('truetype');
-}
 
-@font-face {
-    font-family: 'AHG';
-    src: url('assets/AlteHaasGroteskBold.ttf') format('truetype');
-}
 
 body {
   user-select: none;
-  font-family: 'AHG', sans-serif;
-   margin-left: 3vw;
-   margin-right: 3vw;
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold;
+  height: 100vh;
+    justify-items: center;  
+    align-content: center;
+  margin: 0;
    cursor: url('assets/cursorIcon2.svg') 16 16, auto;
    color: black;
+}
+
+.border {
+    display: grid;
+position: absolute;
+color: rgba(255, 0, 95, 0.5);
+font-family: 'Neuton', serif;
+font-style: italic;
+font-weight: bold;
+letter-spacing: -1px;
+font-size: 15px;
+overflow: clip;
+white-space: nowrap;
+}
+
+#top {
+width: 95vw;
+margin-top: -4vh;
+}
+
+#bottom {
+width: 95vw;
+bottom: 1vh;
+rotate: 180deg;
+}
+
+#left {
+width: 92vh;
+left: -42vh;
+top: 48.5%;
+rotate: -90deg;
+}
+
+#right {
+width: 92vh;
+right: -42vh;
+top: 48.5%;
+rotate: 90deg;
+}
+
+#main {
+    width: 90vw;
+   height: 90vh;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   /* border: 2px dashed blue; */
+   
 }
 
 canvas {
@@ -24,13 +66,9 @@ canvas {
   z-index: -1;
 }
 
-/* h1 {
-    /* border: yellow dashed 2px; */
-    /* letter-spacing: -.8rem; */
-    /* font-weight: normal; */
-    /* display: block; 
-} 
-*/
+h1 {
+    overflow-wrap: normal;
+}
 
 h1#index-title {
  font-size: 200px;
@@ -50,19 +88,26 @@ h1#index-title {
 }
 
 p {
-    /* border: lightgreen solid 2px; */
     font-family: 'AHG', sans-serif;
     font-size: 24px;
 }
 
 a {
     color: black;
-    transition: color 0.15s ease;
+    transition: color  0.15s ease;
+     text-decoration: 1.5px underline;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+    
 }
 
 a:hover {
     color: #61d10a;
     cursor: url('assets/cursorIconHover2B.svg') 16 16, pointer;
+
 }
 
 div#highlights {
@@ -97,26 +142,20 @@ hr {
     border: none;
     border-top: black solid 5px;
     margin: 0px;
-}
-
-/* div.projectlist {
-display: grid;
-justify-content: space-between;
-
-} */
-
-p.inline {
-    display: inline-block;
+    width: 90vw;
 }
 
 p.left {
-    position: relative;
-    left: 0;
+    text-align: left;
 }
 
 p.right {
-    position: absolute;
-    right: 3vw;
+    text-align: right;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 ::-webkit-scrollbar {
