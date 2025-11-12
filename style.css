@@ -7,7 +7,7 @@ body {
   height: 100vh;
     justify-items: center;  
     align-content: center;
-  margin: 0;
+  margin: 0px;
    cursor: url('assets/site/cursorIconV6.cur') 16 16, auto;
    color: black;
 }
@@ -30,25 +30,25 @@ font-size: 15px;
 
 #top {
 width: 95vw;
-top: 1vh;
+top: 2vh;
 }
 
 #bottom {
 width: 95vw;
-bottom: 1vh;
+bottom: 2vh;
 rotate: 180deg;
 }
 
 #left {
 width: 90vh;
-left: -43vh;
+left: -42vh;
 top: 48.5%;
 rotate: -90deg;
 }
 
 #right {
 width: 90vh;
-right: -43vh;
+right: -42vh;
 top: 48.5%;
 rotate: 90deg;
 }
@@ -171,4 +171,34 @@ p.right {
 body {
     color: blue;
 }
+
+p {
+    font-size: 3vw;
+}
+
+a {
+    font-size: 1.1rem;
+}
+
+h1#index-title {
+    font-size: 12vw;
+    line-height: 12vw;
+ margin-bottom: 80px;
+}
+
+#top {
+    top: 10px;
+}
+
+#left {
+    left: -230px;
+}
+
+#right {
+    right: -230px;
+}
+
+#bottom {
+    bottom: 10px;
+
 }
