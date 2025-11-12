@@ -8,7 +8,7 @@ body {
     justify-items: center;  
     align-content: center;
   margin: 0;
-   cursor: url('assets/site/cursorIcon2.svg') 16 16, auto;
+   cursor: url('assets/site/cursorIconV6.png') 16 16, auto;
    color: black;
 }
 
@@ -110,7 +110,7 @@ a {
 
 a:hover {
     color: #61d10a;
-    cursor: url('assets/site/cursorIconHover2B.svg') 16 16, pointer;
+    cursor: url('assets/site/cursorIconV6Hover.png') 16 16, pointer;
 
 }
 
