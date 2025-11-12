@@ -124,6 +124,10 @@ img.highlight {
     opacity: 0.5;
 }
 
+.invisible {
+   display: none
+}
+
 
 h2 {
     font-size: 60px;
