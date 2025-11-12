@@ -3,14 +3,13 @@
 
 <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
-    <link rel="icon" href="assets/myFavicon2.png" type="image/png">
+    <link rel="icon" href="assets/site/myFavicon2.png" type="image/png">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-</style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
     <script src="stars.js"></script>
     <script src="jquery.js"></script>
     <title>emi savage ★ portfolio</title>
@@ -49,59 +48,63 @@
         <div id="hoverme">emi savage ★ </div>
     </h1>
 
-    <!-- <div id="highlights">
-<img class="highlight" src="assets/fuguegif.gif" alt="Fugue for a Specimen homepage">
-<img class="highlight" src="assets/springfestGIFopt.gif" alt="USC Springfest 2024 Visualizer">
-<img class="highlight" src="assets/fishmusic.jpg" alt="Fish Music p5 Sketch">
-    </div> -->
-
     <h2>projects</h2>
-
     <div class="projectlist">
         <hr>
-<div class="row">
-        <p class="inline left">heavy traffic (2025)</p>
-        <p class="inline right">live sound installation and projection about LA road noise</p>
-</div>   <hr>
-<div class="row">
-        <p class="inline left">USC springfest visualizer (2025)</p>
-        <p class="inline right">projection for USC Concerts with Don Toliver and Lyn Lapid</p>
-</div>
+        <div class="row"> 
+        <p class="left" id="heavytraffic"><a href="projects/heavytraffic.html">heavy traffic (2025)</a></p>
+        <p class="right">live sound performance and projection about LA road noise</p>
+       
+        </div> 
         <hr>
         <div class="row">
-        <p class=" left">diszapster (2025)</p>
-        <p class=" right">card game played with arithmetic and lighting</p>
+        <p class="left" id="springfest"><a href="project/springfest.html">USC springfest visualizer (2025)</a></p>
+        <p class="right">projection for USC Concerts with Don Toliver and Lyn Lapid</p>
         </div>
         <hr>
         <div class="row">
-        <p class=" left">fugue for a specimen (2024)</p>
-        <p class=" right">website about the mirrored medical abuse of two 20th century Black women</p>
+        <p class="left" id="autvis"><a href="project/autechrevisualizer.html">rae by autechre visualizer (2025)</a></p>
+        <p class="right">audioreactive visuals made in processing and touchdesigner</p>
         </div>
         <hr>
         <div class="row">
-        <p class=" left">fish music + other p5 sketches (2024)</p>
-        <p class=" right">fun things i made while learning p5.js</p>
-       </div>
-        <hr>
-        <div class="row">
-        <p class=" left">sheinfluential (2024)</p>
-        <p class=" right">video essay about the fast fashion industry, glamour, and consumption</p>
+        <p class="left" id="fugue"><a href="project/fugue.html">fugue for a specimen (2024)</a></p>
+        <p class="right">website about the mirrored medical abuse of two 20th century Black women</p>
         </div>
         <hr>
         <div class="row">
-        <p class=" left">shedding (2023)</p>
-        <p class=" right">story revisions for a short about a boy, his uncle, and the things they lost in the shed 
+        <p class="left" id="fishmusic"><a href="project/fishmusic.html">fish music + other p5 sketches (2024)</a></p>
+        <p class="right">fun things i made while learning p5.js</p>
+        </div>
+        <hr>
+        <div class="row">
+        <p class="left" id="sheinfluential"><a href="project/sheinfluential.html">sheinfluential (2024)</a></p>
+        <p class="right">video essay about the fast fashion industry, glamour, and consumption</p>
+        </div>
+        <hr>
+        <div class="row">
+        <p class="left" id="shedding"><a href="project/shedding.html"> shedding (2023)</a></p>
+        <p class="right">story revisions for a short about a boy, his uncle, and the things they lost in the shed 
         </p>
         </div>
         <hr>
-        <div class="row">
-        <p class=" left">pinterest art account (2021-2023)</p>
-        <p class=" right">my short stint as an art influencer</p>
+        <div class="row" >
+        <p class="left" id="pinterestart"><a href="project/pinfluencer.html">pinterest art account (2021-2023)</a></p>
+        <p class="right">my short stint as an art influencer</p>
         </div>
         <hr>
     </div>
 
 </div>
+<img class="highlight" id="heavytrafficimg" src="assets/highlights/heavytrafficStill.jpg" alt="Heavy Traffic still">
+<img class="highlight" id="springfestgif" src="assets/highlights/springfestOPT.gif" alt="Springfest visualizer">
+<img class="highlight" id="autvisgif" src="assets/highlights/expVidGifOpt2.gif" alt="rae by autechre visualizer">
+<img class="highlight" id="fuguegif" src="assets/highlights/fuguegif.gif" alt="Fugue for a Specimen homepage">
+<img class="highlight" id="fishmusicimg" src="assets/highlights/fishmusic.jpg" alt="Fish Music p5 sketch">
+<img class="highlight" id="sheinfluentialimg" src="assets/highlights/sheinfluentialFrame2.jpg" alt="Sheinfluential video essay">
+<img class="highlight" id="sheddingimg" src="assets/highlights/sheddingStill.png" alt="Shedding still">
+<img class="highlight" id="pinterestartgif" src="assets/highlights/pinterestGIFsquare.gif" alt="Pinterest post of mine">
+
 </body>
 
 </html>

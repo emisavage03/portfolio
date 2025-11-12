@@ -8,7 +8,7 @@ function setup() {
     let boidAmount = windowWidth / 8;
 
     if (boidAmount > 100) {
-        boidAmout = 100;
+        boidAmout = 60;
     } else {
         boidAmount = boidAmount;
     }
@@ -131,7 +131,7 @@ class Boid {
             let mySaturation = 95;
             this.color = color(94, mySaturation, myBrightness);
         } else {
-            let myBrightness = 75;
+            let myBrightness = 80;
             let mySaturation = 0;
             this.color = color(240, mySaturation, myBrightness);
 
