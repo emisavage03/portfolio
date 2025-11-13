@@ -59,19 +59,18 @@ transform: translateX(-50%) rotate(180deg);
 #left {
 width: 90vh;
 position: absolute;
-left: 20vw;
 top: 50%;
-left: 75%;
-transform: translateY(-50%) rotate(90deg);
+left: 2vh;
+transform: translateY(-50%) translateX(-50%) rotate(-90deg);
 transform-origin: center;
 }
 
 #right {
 width: 90vh;
 position: absolute;
-right: 75%;
+right: 2vh;
 top: 50%;
-transform: translateY(-50%) rotate(-90deg);
+transform: translateY(-50%) translateX(50%) rotate(90deg);
 transform-origin: center;
 }
 
@@ -207,14 +206,6 @@ p {
 
 a {
     font-size: 1.1rem;
-}
-
-#left {
-    position: absolute;
-}
-
-#right {
-    position: absolute;
 }
 
 h1#index-title {
