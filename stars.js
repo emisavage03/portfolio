@@ -7,17 +7,19 @@ function setup() {
     flock = new Flock();
     let boidAmount = windowWidth / 8;
 
-    if (boidAmount > 100) {
+    if (boidAmount > 60) {
         boidAmout = 60;
     } else {
         boidAmount = boidAmount;
     }
 
+    
     for (let i = 0; i < boidAmount; i++) {
         let b = new Boid(width / 2, height / 2);
         flock.addBoid(b);
 
     }
+
 }
 
 function draw() {
@@ -26,7 +28,9 @@ function draw() {
 }
 
 function mouseDragged() {
+    if (windowWidth > 768) {
     flock.addBoid(new Boid(mouseX, mouseY));
+    }
 }
 
 class Flock {
