@@ -80,7 +80,7 @@ transform-origin: center;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   overflow-x: hidden;
+   overflow-x: clip;
    overflow-y: scroll;
    /* border: 2px dashed blue; */
    
@@ -193,9 +193,10 @@ body {
     color: blue;
 }
 
-/* #main {
-    width: 100vw;
-} */
+#main {
+    width: 88vw;
+    height: 88vh;
+}
 
 p {
     font-size: 5vw;
