@@ -28,7 +28,6 @@ white-space: nowrap;
     width: 100vw;
     height: 100vh;
     overflow: clip;
-    border: yellow 2px solid;
 }
 
 .borderlink {
@@ -196,12 +195,12 @@ body {
     color: blue;
 }
 
-#main {
+/* #main {
     width: 100vw;
-}
+} */
 
 p {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 a {
@@ -209,7 +208,7 @@ a {
 }
 
 h1#index-title {
-    font-size: 12vw;
+    font-size: 10vw;
     line-height: 12vw;
  margin-bottom: 80px;
 }
