@@ -14,9 +14,21 @@ body {
    color: black;
 }
 
+
+
 .border {
 overflow: clip;
 white-space: nowrap;
+}
+
+#bordercontainer {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: clip;
+    border: yellow 2px solid;
 }
 
 .borderlink {
@@ -30,31 +42,37 @@ font-size: 15px;
 
 #top {
 position: absolute;
+top: 2vh;
+left: 50%;
+transform: translateX(-50%);
 width: 95vw;
-top: 2%;
 }
 
 #bottom {
 position: absolute;
 width: 95vw;
-bottom: 2%;
-rotate: 180deg;
+left: 50%;
+bottom: 2vh;
+transform: translateX(-50%) rotate(180deg); 
 }
 
 #left {
-position: absolute;
 width: 90vh;
-top: 49%;
-right: 75%;
-rotate: -90deg;
+position: absolute;
+left: 20vw;
+top: 50%;
+left: 75%;
+transform: translateY(-50%) rotate(90deg);
+transform-origin: center;
 }
 
 #right {
-position: absolute;
 width: 90vh;
-top: 49%;
-left: 75%;
-rotate: 90deg;
+position: absolute;
+right: 75%;
+top: 50%;
+transform: translateY(-50%) rotate(-90deg);
+transform-origin: center;
 }
 
 #main {
