@@ -14,8 +14,6 @@ body {
    color: black;
 }
 
-
-
 .border {
 overflow: clip;
 white-space: nowrap;
@@ -200,7 +198,7 @@ body {
 } */
 
 p {
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 a {
@@ -208,7 +206,7 @@ a {
 }
 
 h1#index-title {
-    font-size: 10vw;
+    font-size: 11vw;
     line-height: 12vw;
  margin-bottom: 80px;
 }
