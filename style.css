@@ -6,6 +6,7 @@ body {
   font-family: 'Archivo', sans-serif;
   font-weight: bold;
   height: 100vh;
+  width: 100vw;
     justify-items: center;  
     align-content: center;
   margin: 0px;
@@ -14,8 +15,6 @@ body {
 }
 
 .border {
-    display: grid;
-position: absolute;
 overflow: clip;
 white-space: nowrap;
 }
@@ -30,27 +29,31 @@ font-size: 15px;
 }
 
 #top {
+position: absolute;
 width: 95vw;
-top: 2vh;
+top: 2%;
 }
 
 #bottom {
+position: absolute;
 width: 95vw;
-bottom: 2vh;
+bottom: 2%;
 rotate: 180deg;
 }
 
 #left {
+position: relative;
 width: 90vh;
-left: -42vh;
-top: 48.5%;
+top: 1.5%;
+right: 48%;
 rotate: -90deg;
 }
 
 #right {
+position: relative;
 width: 90vh;
-right: -42vh;
-top: 48.5%;
+left: 48%;
+bottom:1.5%;
 rotate: 90deg;
 }
 
@@ -60,6 +63,9 @@ rotate: 90deg;
     top: 5vh;
     width: 90vw;
    height: 90vh;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    overflow-x: hidden;
    overflow-y: scroll;
    /* border: 2px dashed blue; */
@@ -173,6 +179,10 @@ body {
     color: blue;
 }
 
+#main {
+    width: 88vw;
+}
+
 p {
     font-size: 3vw;
 }
@@ -187,19 +197,5 @@ h1#index-title {
  margin-bottom: 80px;
 }
 
-#top {
-    top: 10px;
-}
-
-#left {
-    left: -230px;
-}
-
-#right {
-    right: -230px;
-}
-
-#bottom {
-    bottom: 10px;
 
 }
