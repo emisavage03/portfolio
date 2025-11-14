@@ -29,7 +29,8 @@ white-space: nowrap;
 }
 
 .borderlink {
-color: rgba(255, 0, 95, 0.5);
+/* color: rgba(255, 0, 95, 0.5); */
+color: rgb(136, 136, 136);
 font-family: 'Libre Baskerville', serif;
 font-style: italic;
 font-weight: bold;
@@ -170,11 +171,17 @@ p.left {
     text-align: left;
     width: fit-content;
     height: fit-content;
-    
+}
+
+p.left a {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
 }
 
 p.right {
     text-align: right;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
 }
 
 .row {
@@ -199,7 +206,7 @@ body {
 }
 
 p {
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 a {
