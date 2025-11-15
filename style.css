@@ -1,4 +1,6 @@
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   position: absolute;
@@ -84,8 +86,11 @@ transform-origin: center;
    overflow-x: clip;
    overflow-y: scroll;
    /* border: 2px dashed blue; */
-   
-   
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 canvas {
@@ -99,13 +104,31 @@ h1 {
     overflow-wrap: normal;
 }
 
-h1#index-title {
+h1#index {
  font-size: 200px;
  position: relative;
  line-height: 180px;
- margin-bottom: 250px;
+ margin-bottom: 70px;
+ margin-top: 50px;
 }
 
+#info h1 {
+position: absolute;
+
+}
+
+h2#index {
+    font-size: 60px;
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 100px;
+}
+
+h2 a {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
 
 #myFace {
     position: sticky;
@@ -119,6 +142,7 @@ h1#index-title {
 p {
     font-family: 'AHG', sans-serif;
     font-size: 24px;
+    letter-spacing: -1px;
 }
 
 a {
@@ -149,22 +173,16 @@ img.highlight {
     opacity: 0.5;
 }
 
+
+
 .invisible {
    display: none;
-}
-
-
-h2 {
-    font-size: 60px;
-    position: relative;
-    margin-bottom: 15px;
 }
 
 hr {
     border: none;
     border-top: black solid 5px;
     margin: 0px;
-    width: 90vw;
 }
 
 p.left {
@@ -174,6 +192,7 @@ p.left {
 }
 
 p.left a {
+    
     font-family: 'Archivo', sans-serif;
     font-style: normal;
 }
@@ -191,9 +210,26 @@ p.right {
     text-wrap: balance;
 }
 
-::-webkit-scrollbar {
-  display: none;
+mark {
+    background-color: white; 
+    padding: 1px;
 }
+
+.projectnav {
+    width: 20vw;
+    overflow-y: scroll;
+}
+
+.projectnav .row {
+    padding: 2px;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 body {
@@ -204,6 +240,7 @@ body {
     width: 85vw;
     height: 88vh;
 }
+
 
 p {
     font-size: 4vw;
@@ -218,6 +255,8 @@ h1#index-title {
     line-height: 12vw;
  margin-bottom: 80px;
 }
+
+
 
 
 }
