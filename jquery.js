@@ -5,10 +5,20 @@ jQuery(document).ready(function($) {
             $('#heavytrafficimg').removeClass("invisible").fadeToggle(200);
     });
 
+        $('#mmcgif').hide();
+        $('#mymotherschild').hover(function() {
+            $('#mmcgif').removeClass("invisible").fadeToggle(200);
+    });
+
         $('#springfestgif').hide();
         $('#springfest').hover(function() {
             $('#springfestgif').removeClass("invisible").fadeToggle(200);
     });
+
+        $('#diszapsterimg').hide();
+        $('#diszapster').hover(function () {
+            $('#diszapsterimg').removeClass("invisible").fadeToggle(200);
+     });
 
         $('#autvisgif').hide();
         $('#autvis').hover(function() {
