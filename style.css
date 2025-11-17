@@ -79,6 +79,7 @@ transform-origin: center;
    transform: translate(-50%, -50%);
    overflow-x: clip;
    overflow-y: scroll;
+   z-index: 1;
    /* border: 2px dashed blue; */
 }
 
@@ -162,12 +163,16 @@ img.highlight {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 30rem;
-    z-index: -1;
-    opacity: 0.5;
+    z-index: 0;
+    filter: opacity(50%);
 }
 
 .invisible {
    display: none;
+}
+
+.green {
+    color: #61d10a;
 }
 
 hr {
@@ -186,6 +191,7 @@ p.left a {
     
     font-family: 'Archivo', sans-serif;
     font-style: normal;
+    
 }
 
 p.right {
@@ -202,6 +208,7 @@ p.right {
 }
 
 mark {
+    transition: color  0.15s ease;
     background-color: white; 
     padding: 1px;
 }
