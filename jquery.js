@@ -1,62 +1,62 @@
 jQuery(document).ready(function($) {
 
         $('#heavytrafficimg').hide();
-        $('#heavytraffic').hover(function() {
-            $('#heavytrafficimg').removeClass("invisible").fadeToggle(200);
-            $('#heavytrafficdesc').toggleClass("green");
+        $('.heavytrafficrow').hover(function() {
+            $('#heavytrafficimg').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#mmcgif').hide();
-        $('#mymotherschild').hover(function() {
-            $('#mmcgif').removeClass("invisible").fadeToggle(200);
-            $('#mymotherschilddesc').toggleClass("green");
+        $('.mymotherschildrow').hover(function() {
+            $('#mmcgif').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#springfestgif').hide();
-        $('#springfest').hover(function() {
-            $('#springfestgif').removeClass("invisible").fadeToggle(200);
-            $('#springfestdesc').toggleClass("green");
+        $('.springfestrow').hover(function() {
+            $('#springfestgif').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#diszapsterimg').hide();
-        $('#diszapster').hover(function () {
-            $('#diszapsterimg').removeClass("invisible").fadeToggle(200);
-            $('#diszapsterdesc').toggleClass("green");
+        $('.diszapsterrow').hover(function () {
+            $('#diszapsterimg').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
      });
 
         $('#autvisgif').hide();
-        $('#autvis').hover(function() {
-            $('#autvisgif').removeClass("invisible").fadeToggle(200);
-            $('#autvisdesc').toggleClass("green");
+        $('.autvisrow').hover(function() {
+            $('#autvisgif').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#fuguegif').hide();
-        $('#fugue').hover(function() {
-            $('#fuguegif').removeClass("invisible").fadeToggle(200);
-            $('#fuguedesc').toggleClass("green");
+        $('.fuguerow').hover(function() {
+            $('#fuguegif').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#fishmusicimg').hide();
-        $('#fishmusic').hover(function() {
-            $('#fishmusicimg').removeClass("invisible").fadeToggle(200);
-            $('#fishmusicdesc').toggleClass("green");
+        $('.fishmusicrow').hover(function() {
+            $('#fishmusicimg').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#sheinfluentialimg').hide();
-        $('#sheinfluential').hover(function() {
-            $('#sheinfluentialimg').removeClass("invisible").fadeToggle(200);
-            $('#sheinfluentialdesc').toggleClass("green");
+        $('.sheinfluentialrow').hover(function() {
+            $('#sheinfluentialimg').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#sheddingimg').hide();
-        $('#shedding').hover(function() {
-            $('#sheddingimg').removeClass("invisible").fadeToggle(100);
-            $('#sheddingdesc').toggleClass("green");
+        $('.sheddingrow').hover(function() {
+            $('#sheddingimg').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
 
         $('#pinterestartgif').hide();
-        $('#pinterestart').hover(function() {
-            $('#pinterestartgif').removeClass("invisible").fadeToggle(100);
-            $('#pinterestdesc').toggleClass("green");
+        $('.pinterestrow').hover(function() {
+            $('#pinterestartgif').removeClass("invisible").toggle();
+            $(this).toggleClass("green");
     });
         });
