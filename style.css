@@ -1,16 +1,13 @@
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   position: absolute;
   user-select: none;
   font-family: 'Archivo', sans-serif;
   font-weight: bold;
   margin: 0px;
-  cursor: url('assets/site/cursorIconV6.cur') 16 16, auto;
+  cursor: url('assets/site/cursorIconRed.png') 16 16, auto;
   color: black;
 }
+
 
 nav {
     position: absolute;
@@ -63,12 +60,12 @@ transform: rotate(180deg);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow-x: clip;
-    overflow-y: clip;
+    overflow: clip;
    z-index: 1;
    display: grid;
    grid-template-columns: auto auto;
    column-gap: 100px;
+   scrollbar-color: transparent;
    /* border: 2px dashed blue; */
 }
 
@@ -85,8 +82,25 @@ transform: rotate(180deg);
     overflow-y: scroll;
     width: 60vw;
 }
+
+.project::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+  cursor: url('assets/site/cursorIconRedHover.png') 16 16, auto;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: url('assets/site/cursorIconRedHover.png') 16 16, auto;
+}
+
+.main::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+
 .projectlist {
+    scrollbar-color: rgb(190, 190, 190) transparent;
     overflow-y: scroll;
+    padding-right: 5px;
 }
 
 canvas {
@@ -125,22 +139,21 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
-    transition: color  0.15s ease;
+    transition: color 0.15s ease;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     font-style: italic;
     letter-spacing: -1px;
     font-size: 1.2rem;
-    
+    color: #ff1919;
 }
 
 a:hover {
     transition: color 0.15s ease;
     transition: text-decoration 0.15s ease;
-    text-decoration: underline 2px solid;
-    color: #61d10a;
-    cursor: url('assets/site/cursorIconV6Hover.cur') 16 16, pointer;
+    text-decoration: underline 1.5px double;
+    cursor: url('assets/site/cursorIconRedHover.png') 16 16, pointer;
+   
 }
 
 img.highlight {
@@ -160,7 +173,7 @@ img.highlight {
 }
 
 hr {
-    cursor: url('assets/site/cursorIconV6Hover.cur') 16 16, pointer;
+    cursor: url('assets/site/cursorIconRedHover.png') 16 16, pointer;
     border: none;
     border-top: black solid 3px;
     margin: 0px;
@@ -180,16 +193,15 @@ p.right {
     height: fit-content;
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
-    
 }
 
 mark {
     background-color: transparent;
 }
 
-mark:hover {
-    color: black;
-}
+/* mark:hover {
+    color: white;
+} */
 
 .row {
     display: grid;
