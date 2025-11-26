@@ -2,7 +2,7 @@ body {
   position: absolute;
   user-select: none;
   font-family: 'Archivo', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0px;
   cursor: url('assets/site/cursorIconRed.png') 16 16, auto;
   color: black;
@@ -141,7 +141,6 @@ a {
     text-decoration: none;
     transition: color 0.15s ease;
     font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
     font-style: italic;
     letter-spacing: -1px;
     font-size: 1.2rem;
@@ -149,9 +148,7 @@ a {
 }
 
 a:hover {
-    transition: color 0.15s ease;
-    transition: text-decoration 0.15s ease;
-    text-decoration: underline 1.5px double;
+    text-decoration: underline 2px solid #ff1919;
     cursor: url('assets/site/cursorIconRedHover.png') 16 16, pointer;
    
 }
@@ -220,7 +217,6 @@ mark {
 .projectnav .row {
     padding: 2px;
 }
-
 
 
 
