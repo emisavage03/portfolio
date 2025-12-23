@@ -1,52 +1,34 @@
+// code generated with help from claude; optimizing variables and fixing hover initialization issue
+// https://claude.ai/share/739c600c-213f-424d-b398-1b32780e0ff7
+
 jQuery(document).ready(function($) {
-
-        $('#heavytrafficimg').hide();
-        $('.heavytrafficrow').hover(function() {
-            $('#heavytrafficimg').removeClass("invisible").toggle();
+    // Define hover pairs
+    const hoverPairs = [
+        { row: '.heavytrafficrow', img: '#heavytrafficimg' },
+        { row: '.mymotherschildrow', img: '#mmcgif' },
+        { row: '.springfestrow', img: '#springfestgif' },
+        { row: '.diszapsterrow', img: '#diszapsterimg' },
+        { row: '.autvisrow', img: '#autvisgif' },
+        { row: '.fuguerow', img: '#fuguegif' },
+        { row: '.fishmusicrow', img: '#fishmusicimg' },
+        { row: '.sheinfluentialrow', img: '#sheinfluentialimg' },
+        { row: '.sheddingrow', img: '#sheddingimg' },
+        { row: '.pinterestrow', img: '#pinterestartgif' }
+    ];
+    
+    // Initially hide all images
+    hoverPairs.forEach(function(pair) {
+        $(pair.img).hide().addClass('invisible');
     });
-
-        $('#mmcgif').hide();
-        $('.mymotherschildrow').hover(function() {
-            $('#mmcgif').removeClass("invisible").toggle();
+    
+    // Attach explicit mouseenter/mouseleave handlers
+    hoverPairs.forEach(function(pair) {
+        $(pair.row)
+            .on('mouseenter', function() {
+                $(pair.img).removeClass('invisible').show();
+            })
+            .on('mouseleave', function() {
+                $(pair.img).addClass('invisible').hide();
+            });
     });
-
-        $('#springfestgif').hide();
-        $('.springfestrow').hover(function() {
-            $('#springfestgif').removeClass("invisible").toggle();
-    });
-
-        $('#diszapsterimg').hide();
-        $('.diszapsterrow').hover(function () {
-            $('#diszapsterimg').removeClass("invisible").toggle();
-     });
-
-        $('#autvisgif').hide();
-        $('.autvisrow').hover(function() {
-            $('#autvisgif').removeClass("invisible").toggle();
-    });
-
-        $('#fuguegif').hide();
-        $('.fuguerow').hover(function() {
-            $('#fuguegif').removeClass("invisible").toggle();
-    });
-
-        $('#fishmusicimg').hide();
-        $('.fishmusicrow').hover(function() {
-            $('#fishmusicimg').removeClass("invisible").toggle();
-    });
-
-        $('#sheinfluentialimg').hide();
-        $('.sheinfluentialrow').hover(function() {
-            $('#sheinfluentialimg').removeClass("invisible").toggle();
-    });
-
-        $('#sheddingimg').hide();
-        $('.sheddingrow').hover(function() {
-            $('#sheddingimg').removeClass("invisible").toggle();
-    });
-
-        $('#pinterestartgif').hide();
-        $('.pinterestrow').hover(function() {
-            $('#pinterestartgif').removeClass("invisible").toggle();
-    });
-        });
+});
