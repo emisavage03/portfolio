@@ -79,7 +79,7 @@ transform: rotate(180deg);
     display: grid;
     grid-template-rows: auto auto;
     overflow-y: scroll;
-    width: 60vw;
+    
    
 }
 
