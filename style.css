@@ -26,10 +26,6 @@ nav {
     z-index: 1;
 }
 
-/* nav a {
-    font-family: 'Archivo', sans-serif;
-} */
-
 
 
 #main {
@@ -87,7 +83,7 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
-  opacity: 0.3;
+  opacity: 0.5;
 
 }
 
@@ -102,13 +98,12 @@ h1#index {
     position: relative;
     position: sticky;
     height: 5vh;
+    letter-spacing: -2px;
 }
 
 
-
-
 p {
-    font-family: 'AHG', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: 18px;
     letter-spacing: -1px;
 }

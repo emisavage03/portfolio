@@ -1,4 +1,4 @@
-let cuteArray = ["⋆","꩜", "ᯓ","★", "✮", "⋆", "˚","✩", "✶", "₊","⊹", "𓆝", "𓆟", "𓆞", "𖥔","˖","☘︎", "᯽", " ", " ", " "];
+let cuteArray = ["⋆","꩜", "ᯓ","★", "✮", "⋆", "˚","✩", "✶", "₊","⊹", "𖥔","˖","☘︎", "᯽", " ", " ", " "];
 let randomCute;
 let cuteColors = ["#29bf12", "#A5DC6A", "#08bdbd", "#ff9914", "#f21b3f", "#00a5cf"];
 let randomColor;
@@ -26,7 +26,7 @@ function draw() {
        
         let timeSinceActivation = now - delay;
        
-        let changeInterval = 3000;
+        let changeInterval = 2500;
         let changeIndex = floor(timeSinceActivation / changeInterval);
         
         randomSeed(i * j + changeIndex * 1000);
