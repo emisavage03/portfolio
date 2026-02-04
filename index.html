@@ -9,9 +9,11 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
     </style>
-  
+   
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <title>emi savage ★ portfolio</title>
+     <script src="cutep5.js"></script>
+
+    <title>Emi Savage</title>
 </head>
  <body>   
 <nav>
@@ -22,7 +24,7 @@
     </div>
 </nav>
 <div id="bordercontainer">
-            <div id="top">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀<br>
+            <!-- <div id="top">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡀⠀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⡀⢀⠀⠀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢀⢀⡀⠀<br>
@@ -46,8 +48,8 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠟⠁⠀⠀⠀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢣⡀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂<br>
-</div>
-            <div id="bottom">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄<br>
+</div> -->
+            <!-- <div id="bottom">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢷⣤⡞⠀<br>
@@ -74,15 +76,30 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡿⠁⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡀<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢄<br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁<br>
-</div>
+</div> -->
         </div>
     
     <div id="main">
 
-        <div class="about">
+        
+
+    <div class="about">
+
+            <div id="highlightcontainer">
+            <img class="highlight invisible" id="heavytrafficimg" src="assets/highlights/heavytrafficStill.jpg" alt="Heavy Traffic still">
+<img class="highlight invisible" id="mmcgif" src="assets/highlights/mmcOPT.gif" alt="My Mother's Child Blanket">
+<img class="highlight invisible" id="springfestgif" src="assets/highlights/springfestOPT.gif" alt="Springfest visualizer">
+<img class="highlight invisible" id="diszapsterimg" src="assets/highlights/diszapterCARDS.jpg" alt="Diszapster Cards">
+<img class="highlight invisible" id="autvisgif" src="assets/highlights/expVidGifOpt2.gif" alt="Rae by Autechre Visualizer">
+<img class="highlight invisible" id="fuguegif" src="assets/highlights/fuguegif.gif" alt="Fugue for a Specimen homepage">
+<img class="highlight invisible" id="fishmusicimg" src="assets/highlights/fishmusic.jpg" alt="Fish Music p5 sketch">
+<img class="highlight invisible" id="sheinfluentialimg" src="assets/highlights/sheinfluentialFrame2.jpg" alt="Sheinfluential video essay">
+<img class="highlight invisible" id="sheddingimg" src="assets/highlights/sheddingStill.png" alt="Shedding Still">
+<img class="highlight invisible" id="pinterestartgif" src="assets/highlights/pinterestGIFsquare.gif" alt="Pinterest post of mine">
+</div>
             
    
-        
+        <div id="bio">
         <p>I am Emi Savage. I am a media artist and undergrad student based in
         Los Angeles, CA. By blending emerging technology and sensory experience, I make work that draws you in to the body, the web, and
         the things in your backyard. My disciplines include creative code, projection, installation, graphic design, and video.
@@ -93,11 +110,10 @@
         handcoded with <a href="https://p5js.org/" target="_blank"><mark>p5.js</mark></a> and <a href="https://jquery.com/"
             target="_blank"><mark>jQuery</mark></a>.
         </p>
+        </div>
    
 
         </div>
-
-    
     
 <div class="project">
     <h1 id="index">projects</h1>
@@ -167,17 +183,9 @@
     </div>
         
     </div>
+
+    
 </div>
-<img class="highlight invisible" id="heavytrafficimg" src="assets/highlights/heavytrafficStill.jpg" alt="Heavy Traffic still">
-<img class="highlight invisible" id="mmcgif" src="assets/highlights/mmcOPT.gif" alt="My Mother's Child Blanket">
-<img class="highlight invisible" id="springfestgif" src="assets/highlights/springfestOPT.gif" alt="Springfest visualizer">
-<img class="highlight invisible" id="diszapsterimg" src="assets/highlights/diszapterCARDS.jpg" alt="Diszapster Cards">
-<img class="highlight invisible" id="autvisgif" src="assets/highlights/expVidGifOpt2.gif" alt="Rae by Autechre Visualizer">
-<img class="highlight invisible" id="fuguegif" src="assets/highlights/fuguegif.gif" alt="Fugue for a Specimen homepage">
-<img class="highlight invisible" id="fishmusicimg" src="assets/highlights/fishmusic.jpg" alt="Fish Music p5 sketch">
-<img class="highlight invisible" id="sheinfluentialimg" src="assets/highlights/sheinfluentialFrame2.jpg" alt="Sheinfluential video essay">
-<img class="highlight invisible" id="sheddingimg" src="assets/highlights/sheddingStill.png" alt="Shedding Still">
-<img class="highlight invisible" id="pinterestartgif" src="assets/highlights/pinterestGIFsquare.gif" alt="Pinterest post of mine">
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="jquery.js"></script>

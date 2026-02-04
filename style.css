@@ -11,8 +11,8 @@ body {
 
 nav {
     position: absolute;
-    width: 90vw;
-    left: 5vw;
+    width: 95vw;
+    left: 2.5vw;
     height: 5vh;
     display: grid;
     justify-content: space-between;
@@ -55,7 +55,7 @@ transform: rotate(180deg);
 #main {
     position: absolute;
     top: 5vh;
-    width: 90vw;
+    width: 95vw;
     height: 90vh;
     top: 50%;
     left: 50%;
@@ -64,23 +64,23 @@ transform: rotate(180deg);
    z-index: 1;
    display: grid;
    grid-template-columns: auto auto;
-   column-gap: 100px;
+   column-gap: 70px;
    scrollbar-color: transparent;
    /* border: 2px dashed blue; */
 }
 
 .about {
-    align-content: end;
+    display: grid;
+    grid-auto-columns:auto auto;
     line-height: 1.5rem;
     text-wrap: balance;
-}
+ }
 
 .project {
     display: grid;
     grid-template-rows: auto auto;
     overflow-y: scroll;
-    
-   
+    width: 35vw;
 }
 
 .project::-webkit-scrollbar {
@@ -98,7 +98,7 @@ transform: rotate(180deg);
 
 
 .projectlist {
-    scrollbar-color: rgb(190, 190, 190) transparent;
+    scrollbar-color: rgb(222, 222, 222) transparent;
     overflow-y: scroll;
     padding-right: 5px;
 }
@@ -108,6 +108,8 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
+  opacity: 0.3;
+
 }
 
 h1 {
@@ -119,7 +121,6 @@ h1 {
 h1#index {
     font-size: 10vh;
     position: relative;
-    margin-top: 10vh;
     position: sticky;
     height: 5vh;
 }
@@ -150,11 +151,20 @@ a:hover {
 }
 
 img.highlight {
-    position: absolute;
-    right: 5vw;
-    top: 10vh;
-    height: 15vh;
-    z-index: 0;
+    
+    height: 40vh;
+    z-index: 1;
+}
+
+#highlightcontainer {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#bio {
+    align-content: flex-end;
 }
 
 .invisible {
