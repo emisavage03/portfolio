@@ -27,8 +27,6 @@ function draw() {
         let timeSinceActivation = now - delay;
        
         let changeInterval = 3000;
-        
-
         let changeIndex = floor(timeSinceActivation / changeInterval);
         
         randomSeed(i * j + changeIndex * 1000);
