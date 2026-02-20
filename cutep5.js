@@ -1,6 +1,6 @@
-let cuteArray = ["⋆","⟡", "✿","★", "✮", "⋆", "˚","✩", "✶", "₊","⊹", "𓆝", "𓆟", "𓆞", "✳","˖","☘︎", "୭", " ", " ", " "];
+let cuteArray = ["⋆","⟡", "✿","★", "✮", "⋆", "˚","✩", "✶", "₊","⊹", "☄", "♠", "⍟", "✳","˖","♣", "*", " ", " ", " ", " "];
 let randomCute;
-let cuteColors = ["#29bf12", "#A5DC6A", "#08bdbd", "#ff9914", "#f21b3f", "#00a5cf"];
+let cuteColors = ["#32a0bf", "#f5c748", "#f58583", "#6ec93c", "#e4292c", "#e73f6f", "#92c3dd", "#cbcd43", "#bcdc51"];
 let randomColor;
 let startTime;
 
@@ -15,8 +15,8 @@ function draw() {
   
   let now = millis() - startTime;
   
-  for (let i = 10; i < windowWidth; i += 40){
-    for (let j = 10; j < windowHeight; j += 40){
+  for (let i = 15; i < windowWidth; i += 50){
+    for (let j = 15; j < windowHeight; j += 50){
     
       let distance = dist(mouseX, mouseY, i, j);
       
@@ -33,6 +33,7 @@ function draw() {
         randomCute = random(cuteArray);
         randomColor = random(cuteColors);
         
+        textSize(12);
         fill(randomColor);
         text(randomCute, i, j);
       }

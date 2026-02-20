@@ -4,31 +4,34 @@
 jQuery(document).ready(function($) {
     // Define hover pairs
     const hoverPairs = [
-        { row: '.heavytrafficrow', img: '#heavytrafficimg' },
-        { row: '.mymotherschildrow', img: '#mmcgif' },
-        { row: '.springfestrow', img: '#springfestgif' },
-        { row: '.diszapsterrow', img: '#diszapsterimg' },
-        { row: '.autvisrow', img: '#autvisgif' },
-        { row: '.fuguerow', img: '#fuguegif' },
-        { row: '.fishmusicrow', img: '#fishmusicimg' },
-        { row: '.sheinfluentialrow', img: '#sheinfluentialimg' },
-        { row: '.sheddingrow', img: '#sheddingimg' },
-        { row: '.pinterestrow', img: '#pinterestartgif' }
+        { row: '.zaprow', div: '#zapgraphics' },
+        { row: '.strudelwsrow', div: '#strudelws' },
+        { row: '.lampshowrow', div: '#lampshowimg' },
+        { row: '.heavytrafficrow', div: '#heavytrafficimg' },
+        { row: '.mymotherschildrow', div: '#mmcgif' },
+        { row: '.springfestrow', div: '#springfestgif' },
+        { row: '.diszapsterrow', div: '#diszapsterimg' },
+        { row: '.autvisrow', div: '#autvisgif' },
+        { row: '.fuguerow', div: '#fuguegif' },
+        { row: '.fishmusicrow', div: '#fishmusicimg' },
+        { row: '.sheinfluentialrow', div: '#sheinfluentialimg' },
+        { row: '.sheddingrow', div: '#sheddingimg' },
+        { row: '.pinterestrow', div: '#pinterestartgif' }
     ];
     
     // Initially hide all images
     hoverPairs.forEach(function(pair) {
-        $(pair.img).hide().addClass('invisible');
+        $(pair.div).hide().addClass('invisible');
     });
     
     // Attach explicit mouseenter/mouseleave handlers
     hoverPairs.forEach(function(pair) {
         $(pair.row)
             .on('mouseenter', function() {
-                $(pair.img).removeClass('invisible').show();
+                $(pair.div).removeClass('invisible').show();
             })
             .on('mouseleave', function() {
-                $(pair.img).addClass('invisible').hide();
+                $(pair.div).addClass('invisible').hide();
             });
     });
 });

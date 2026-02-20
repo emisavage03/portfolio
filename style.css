@@ -83,7 +83,8 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  filter: blur(.75px)
 
 }
 
@@ -128,6 +129,7 @@ img.highlight {
     
     height: 40vh;
     z-index: 1;
+
 }
 
 #highlightcontainer {
@@ -135,6 +137,10 @@ img.highlight {
     height: 60vh;
     align-items: center;
     justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    text-align: right;
+    letter-spacing: -1px;
 }
 
 #bio {
