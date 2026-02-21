@@ -6,13 +6,12 @@ body {
   margin: 0px;
   cursor: url('assets/site/cursorIconBlue.png') 16 16, auto;
   color: black;
-   left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
     width: 100vw;
     height: 100vh;
     overflow: clip;
 }
-
 
 nav {
     position: absolute;
@@ -26,8 +25,6 @@ nav {
     z-index: 1;
 }
 
-
-
 #main {
     position: absolute;
     top: 5vh;
@@ -37,7 +34,6 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: clip;
-   z-index: 1;
    display: grid;
    grid-template-columns: auto auto;
    column-gap: 70px;
@@ -45,35 +41,30 @@ nav {
    /* border: 2px dashed blue; */
 }
 
-.about {
+.project{
     display: grid;
     grid-auto-columns:auto auto;
     line-height: 1.5rem;
+    width: 35vw;
+    overflow-y: scroll;
  }
 
-.project {
+
+#projectthin {
     display: grid;
     grid-template-rows: auto auto;
     overflow-y: scroll;
-    width: 35vw;
+    width: 30vw;
+    line-height: 1.5rem;
 }
 
-.project::-webkit-scrollbar {
+.project::-webkit-scrollbar, #projectthin::-webkit-scrollbar, .main::-webkit-scrollbar, .projectlist::-webkit-scrollbar, .projinfo::-webkit-scrollbar  {
   display: none; /* Hides the scrollbar */
   cursor: url('assets/site/cursorIconBlueHover.png') 16 16, auto;
-}
-
-::-webkit-scrollbar:hover {
-  cursor: url('assets/site/cursorIconBlueHover.png') 16 16, auto;
-}
-
-.main::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar */
 }
 
 
 .projectlist {
-    scrollbar-color: rgb(222, 222, 222) transparent;
     overflow-y: scroll;
     padding-right: 5px;
 }
@@ -83,7 +74,6 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
-  /* opacity: 0.5; */
   filter: blur(.75px)
 
 }
@@ -92,15 +82,16 @@ h1 {
     overflow-wrap: normal;
 }
 
-
-
-h1#index {
+#index, #title {
     font-size: 10vh;
     position: relative;
     position: sticky;
     height: 5vh;
     letter-spacing: -2px;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
 }
+
 
 
 p {
@@ -115,7 +106,7 @@ a {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
     letter-spacing: -1px;
-    font-size: 1.1rem;
+    
     color: #0800ff;
 }
 
@@ -126,15 +117,16 @@ a:hover {
 }
 
 img.highlight {
-    
     height: 40vh;
     z-index: 1;
+}
 
+#linked img {
+    height: 20vh;
 }
 
 #highlightcontainer {
     display: flex;
-    height: 60vh;
     align-items: center;
     justify-content: center;
     font-family: 'Libre Baskerville', serif;
@@ -143,17 +135,27 @@ img.highlight {
     letter-spacing: -1px;
 }
 
+
 #bio {
-    align-content: flex-end;
     text-wrap: balance;
+}
+
+.about {
+    /* border: 2px solid yellowgreen; */
+    display: grid;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.projinfo {
+ align-content: flex-start;
+    text-wrap: balance;   
+    overflow-y: scroll;
+
 }
 
 .invisible {
    display: none;
-}
-
-.green {
-    color: black;
 }
 
 hr {
@@ -161,6 +163,7 @@ hr {
     border: none;
     border-top: black solid 2px;
     margin: 0px;
+   
 }
 
 p.left {
@@ -182,10 +185,6 @@ p.right {
 mark {
     background-color: transparent;
 }
-
-/* mark:hover {
-    color: white;
-} */
 
 .row {
     display: grid;
