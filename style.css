@@ -38,7 +38,8 @@ nav {
    grid-template-columns: auto auto;
    column-gap: 70px;
    scrollbar-color: transparent;
-   /* border: 2px dashed blue; */
+ 
+
 }
 
 .project{
@@ -50,15 +51,35 @@ nav {
  }
 
 
-#projectthin {
+#projectscroll {
     display: grid;
     grid-template-rows: auto auto;
     overflow-y: scroll;
-    width: 30vw;
+    justify-self: flex-end;
+    
     line-height: 1.5rem;
+  
 }
 
-.project::-webkit-scrollbar, #projectthin::-webkit-scrollbar, .main::-webkit-scrollbar, .projectlist::-webkit-scrollbar, .projinfo::-webkit-scrollbar  {
+.thin {
+    position: relative;
+    width: 30vw;
+}
+
+blockquote {
+    justify-content: center;
+}
+
+
+.projinfo {
+ display: grid;
+    grid-template-rows: auto auto;
+   
+
+overflow-y: scroll;
+}
+
+.project::-webkit-scrollbar, #projectscroll::-webkit-scrollbar, .main::-webkit-scrollbar, .projectlist::-webkit-scrollbar, .projinfo::-webkit-scrollbar, #desc::-webkit-scrollbar {
   display: none; /* Hides the scrollbar */
   cursor: url('assets/site/cursorIconBlueHover.png') 16 16, auto;
 }
@@ -67,6 +88,7 @@ nav {
 .projectlist {
     overflow-y: scroll;
     padding-right: 5px;
+
 }
 
 canvas {
@@ -85,13 +107,13 @@ h1 {
 #index, #title {
     font-size: 10vh;
     position: relative;
-    position: sticky;
     height: 5vh;
     letter-spacing: -2px;
     padding-top: 2rem;
     margin-bottom: 1.5rem;
-}
+    line-height: 0.3;
 
+}
 
 
 p {
@@ -110,7 +132,7 @@ a {
     color: #0800ff;
 }
 
-a:hover {
+.here, a:hover {
     text-decoration: underline 2px solid #0800ff;
     cursor: url('assets/site/cursorIconBlueHover.png') 16 16, pointer;
    
@@ -121,8 +143,8 @@ img.highlight {
     z-index: 1;
 }
 
-#linked img {
-    height: 20vh;
+.linked {
+    width: 100rem;
 }
 
 #highlightcontainer {
@@ -140,6 +162,16 @@ img.highlight {
     text-wrap: balance;
 }
 
+
+#desc {
+    overflow-y: scroll;
+}
+
+#bio, #desc {
+    line-height: 1.5rem;
+}
+
+
 .about {
     /* border: 2px solid yellowgreen; */
     display: grid;
@@ -147,12 +179,7 @@ img.highlight {
     justify-content: center;
 }
 
-.projinfo {
- align-content: flex-start;
-    text-wrap: balance;   
-    overflow-y: scroll;
 
-}
 
 .invisible {
    display: none;

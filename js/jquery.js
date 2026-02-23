@@ -4,19 +4,17 @@
 jQuery(document).ready(function($) {
     // Define hover pairs
     const hoverPairs = [
-        { row: '.zaprow', div: '#zapgraphics' },
-        { row: '.strudelwsrow', div: '#strudelws' },
-        { row: '.lampshowrow', div: '#lampshowimg' },
-        { row: '.heavytrafficrow', div: '#heavytrafficimg' },
-        { row: '.mymotherschildrow', div: '#mmcgif' },
-        { row: '.springfestrow', div: '#springfestgif' },
-        { row: '.diszapsterrow', div: '#diszapsterimg' },
-        { row: '.autvisrow', div: '#autvisgif' },
-        { row: '.fuguerow', div: '#fuguegif' },
-        { row: '.fishmusicrow', div: '#fishmusicimg' },
-        { row: '.sheinfluentialrow', div: '#sheinfluentialimg' },
-        { row: '.sheddingrow', div: '#sheddingimg' },
-        { row: '.pinterestrow', div: '#pinterestartgif' }
+        { row: '#zaprow', div: '#zapgraphics' },
+        { row: '#strudelwsrow', div: '#strudelws' },
+        { row: '#lampshowrow', div: '#lampshowimg' },
+        { row: '#heavytrafficrow', div: '#heavytrafficimg' },
+        { row: '#mymotherschildrow', div: '#mmcgif' },
+        { row: '#springfestrow', div: '#springfestgif' },
+        { row: '#diszapsterrow', div: '#diszapsterimg' },
+        { row: '#fuguerow', div: '#fuguegif' },
+        { row: '#fishmusicrow', div: '#fishmusicimg' },
+        { row: '#sheddingrow', div: '#sheddingimg' },
+        { row: '#pinterestrow', div: '#pinterestartgif' }
     ];
     
     // Initially hide all images
