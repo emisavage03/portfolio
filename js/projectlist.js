@@ -2,13 +2,13 @@ document.getElementById("projectscroll").innerHTML = `
   <h1 id="index">projects</h1>
     <hr>
     <div class="projectlist">
-        <div id="zaprow"> <a class="row" href="portfolio/projects/zap.html">
+        <div id="zaprow"> <a class="row" href="zap.html">
         <p class="left"><mark>ZAP marketing (2025-ongoing)</mark></p>
         <p class="right"><mark>graphic design and other duties for USC's media arts RSO</mark></p>
         </a>
         <hr>
     </div>
-        <div id="strudelwsrow"> <a class="row" href="portfolio/projects/strudel.html">
+        <div id="strudelwsrow"> <a class="row" href="/strudel.html">
         <p class="left"><mark>Strudel workshop (2026)</mark></p>
         <p class="right"><mark>creative club event to teach algorithmic music live coding</mark></p>
         </a>
