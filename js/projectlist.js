@@ -14,25 +14,25 @@ document.getElementById("projectscroll").innerHTML = `
         </a>
         <hr>
     </div>
-        <div id="lampshowrow"> <a class="row" href="portfolio/projects/lampshow.html">
+        <div id="lampshowrow"> <a class="row" href="/portfolio/projects/lampshow.html">
         <p class="left"><mark>Lamp Show doc (2025)</mark></p> 
         <p class="right"><mark>documentary showcasing the AUTOBODY autobody Lamp Show</mark></p>
         </a>
         <hr>
     </div>
-        <div id="heavytrafficrow"> <a class="row" href="portfolio/projects/heavytraffic.html">
+        <div id="heavytrafficrow"> <a class="row" href="/portfolio/projects/heavytraffic.html">
         <p class="left"><mark>Heavy Traffic (2025)</mark></p>
         <p class="right"><mark>code and sound driven by live LA traffic cam data</mark></p>
         </a>
         <hr>
         </div>
-        <div id="mymotherschildrow"> <a class="row" href="portfolio/projects/mymotherschild.html">
+        <div id="mymotherschildrow"> <a class="row" href="/mymotherschild.html">
         <p class="left"><mark>My Mother's Child (2025)</mark></p>
         <p class="right"><mark>a blanket as a vision of motherhood, daughterhood, and myself in 2035</mark></p>
         </a>
         <hr>
         </div>
-        <div id="springfestrow"> <a class="row" href="portfolio/projects/springfest.html">
+        <div id="springfestrow"> <a class="row" href="/springfest.html">
         <p class="left"><mark>USC Springfest visualizer (2025)</mark></p>
         <p class="right"><mark>concert visuals for USC Concerts with Don Toliver and Lyn Lapid</mark></p>
         </a>
