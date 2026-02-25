@@ -235,7 +235,7 @@ mark {
 
 #main {
     width: 85vw;
-    height: 88vh;
+    height: 80vh;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
 }
@@ -243,7 +243,7 @@ mark {
 #title, #index {
     font-size: 40px;
     padding-bottom: 0px;
-    padding-top: 1rem;
+    padding-top: 0%;
     margin-bottom: 0%;
 }
 
