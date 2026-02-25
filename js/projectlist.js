@@ -2,15 +2,15 @@ document.getElementById("projectscroll").innerHTML = `
   <h1 id="index">projects</h1>
     <hr>
     <div class="projectlist">
-        <div id="zaprow"> <a class="row" href="/portfolio/projects/zap.html">
-        <p class="left"><mark>ZAP marketing (2025-ongoing)</mark></p>
-        <p class="right"><mark>graphic design and other duties for USC's media arts RSO</mark></p>
+    <div id="strudelwsrow"> <a class="row" href="/portfolio/projects/strudel.html">
+        <p class="left"><mark>Strudel workshop (2026)</mark></p>
+        <p class="right"><mark>creative club event to teach algorithmic music live coding</mark></p>
         </a>
         <hr>
     </div>
-        <div id="strudelwsrow"> <a class="row" href="/portfolio/projects/strudel.html">
-        <p class="left"><mark>Strudel workshop (2026)</mark></p>
-        <p class="right"><mark>creative club event to teach algorithmic music live coding</mark></p>
+        <div id="zaprow"> <a class="row" href="/portfolio/projects/zap.html">
+        <p class="left"><mark>ZAP marketing (2025-ongoing)</mark></p>
+        <p class="right"><mark>graphic design and other duties for USC's media arts RSO</mark></p>
         </a>
         <hr>
     </div>
@@ -23,12 +23,6 @@ document.getElementById("projectscroll").innerHTML = `
         <div id="heavytrafficrow"> <a class="row" href="/portfolio/projects/heavytraffic.html">
         <p class="left"><mark>Heavy Traffic (2025)</mark></p>
         <p class="right"><mark>code and sound driven by live LA traffic cam data</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="mymotherschildrow"> <a class="row" href="/portfolio/projects/mymotherschild.html">
-        <p class="left"><mark>My Mother's Child (2025)</mark></p>
-        <p class="right"><mark>a blanket as a vision of motherhood, daughterhood, and myself in 2035</mark></p>
         </a>
         <hr>
         </div>
