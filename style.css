@@ -56,7 +56,6 @@ nav {
     grid-template-rows: auto auto;
     overflow-y: scroll;
     justify-self: flex-end;
-    
     line-height: 1.5rem;
   
 }
@@ -74,8 +73,6 @@ blockquote {
 .projinfo {
  display: grid;
     grid-template-rows: auto auto;
-   
-
 overflow-y: scroll;
 }
 
@@ -234,29 +231,51 @@ mark {
 
 
 @media screen and (max-width: 768px) {
-body {
-    color: blue;
-}
+
 
 #main {
     width: 85vw;
     height: 88vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+#title, #index {
+    font-size: 40px;
+    padding-bottom: 0px;
+    padding-top: 1rem;
+    margin-bottom: 0%;
 }
 
 
 p {
-    font-size: 4vw;
+    font-size: 14px;
+    line-height: 1rem;
 }
 
-a {
-    font-size: 1.1rem;
+.project, .thin {
+    width: auto;
+    height: 35vh;
+    align-self: flex-end;
+
 }
+
+nav {
+    font-size: 12px;
+}
+
 
 h1#index-title {
     font-size: 11vw;
     line-height: 12vw;
  margin-bottom: 80px;
 }
+
+#highlightcontainer {
+    display: none;
+    
+}
+
 
 
 
