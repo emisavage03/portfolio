@@ -13,6 +13,20 @@ body {
     overflow: clip;
 }
 
+
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        
+    }
+}
+
+
 nav {
     position: absolute;
     width: 95vw;
@@ -78,7 +92,6 @@ overflow-y: scroll;
 
 .project::-webkit-scrollbar, #projectscroll::-webkit-scrollbar, .main::-webkit-scrollbar, .projectlist::-webkit-scrollbar, .projinfo::-webkit-scrollbar, #desc::-webkit-scrollbar {
   display: none; /* Hides the scrollbar */
-  cursor: url('assets/site/cursorIconBlueHover.png') 16 16, auto;
 }
 
 
@@ -93,7 +106,7 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
-  filter: blur(.75px);
+  filter: opacity(0);
   
 
 }

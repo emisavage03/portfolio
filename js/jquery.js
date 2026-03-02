@@ -1,5 +1,6 @@
-// code generated with help from claude; optimizing variables and fixing hover initialization issue
+// code with help from claude; optimizing variables and fixing hover initialization issue
 // https://claude.ai/share/739c600c-213f-424d-b398-1b32780e0ff7
+
 
 jQuery(document).ready(function($) {
     // Define hover pairs
