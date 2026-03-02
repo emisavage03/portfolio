@@ -93,7 +93,8 @@ canvas {
     top: 0;
     left: 0;
   z-index: -3;
-  filter: blur(.75px)
+  filter: blur(.75px);
+  
 
 }
 

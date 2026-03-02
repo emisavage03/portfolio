@@ -5,7 +5,8 @@
 let faviconSketch = function(b) {
 let cuteArray = ["⋆","⟡", "✿","★", "✮", "⋆", "✩", "✶","⊹", "☄", "♠", "⍟", "✳","♣"];
 let randomCute;
-let cuteColors = ["#32a0bf", "#f5c748", "#f58583", "#6ec93c", "#e4292c", "#e73f6f", "#92c3dd", "#cbcd43", "#bcdc51"];
+// let cuteColors = ["#32a0bf", "#f5c748", "#f58583", "#6ec93c", "#e4292c", "#e73f6f", "#92c3dd", "#cbcd43", "#bcdc51"];
+let cuteColors = ["blue"]
 let randomColor;
 
 b.setup = function() {
@@ -38,7 +39,8 @@ let BGsketch = function(a) {
 
 let cuteArray = ["⋆","⟡", "✿","★", "✮", "⋆", "˚","✩", "✶", "₊","⊹", "☄", "♠", "⍟", "✳","˖","♣", "*", " ", " ", " ", " ", " "];
 let randomCute;
-let cuteColors = ["#32a0bf", "#f5c748", "#f58583", "#6ec93c", "#e4292c", "#e73f6f", "#92c3dd", "#cbcd43", "#bcdc51"];
+// let cuteColors = ["#32a0bf", "#f5c748", "#f58583", "#6ec93c", "#e4292c", "#e73f6f", "#92c3dd", "#cbcd43", "#bcdc51"];
+
 let randomColor;
 let startTime;
 
@@ -46,24 +48,27 @@ let startTime;
   a.setup = function() {
     a.createCanvas(a.windowWidth, a.windowHeight);
     startTime = a.millis();
+    a.colorMode(a.HSB);
+  
   }
 
   a.draw = function() {
+    
     a.background("white");
     let now = a.millis() - startTime;
     
-    for (let i = 15; i < a.windowWidth; i += 50){
-      for (let j = 15; j < a.windowHeight; j += 50){
+    for (let i = 15; i < a.windowWidth; i += 60){
+      for (let j = 15; j < a.windowHeight; j += 60){
         let distance = a.dist(a.mouseX, a.mouseY, i, j);
         let delay = distance * 2;
         if (now > delay) {
           let timeSinceActivation = now - delay;
-          let changeInterval = 2500;
+          let changeInterval = 4000;
           let changeIndex = a.floor(timeSinceActivation / changeInterval);
           a.randomSeed(i * j + changeIndex * 1000);
           randomCute = a.random(cuteArray);
-          randomColor = a.random(cuteColors);
-          a.textSize(12);
+          randomColor = a.color(a.random(210, 270), a.random(50,100), a.random(50, 100));
+          a.textSize(10);
           a.fill(randomColor);
           a.text(randomCute, i, j);
         }
