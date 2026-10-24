@@ -1,16 +1,33 @@
+/* 
+.archivo-<uniquifier> {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
 body {
   position: absolute;
   user-select: none;
-  font-family: 'Archivo', sans-serif;
-  font-weight: normal;
+ 
   margin: 0px;
-  cursor: url('assets/site/cursorIconBlue.png') 16 16, auto;
+ // cursor: url('assets/site/cursorIconBlue.png') 16 16, auto;
   color: black;
   left: 0;
   top: 0;
     width: 100vw;
     height: 100vh;
     overflow: clip;
+
+    font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 
@@ -145,7 +162,7 @@ a {
 
 .here, a:hover {
     text-decoration: underline 2px solid #0800ff;
-    cursor: url('assets/site/cursorIconBlueHover.png') 16 16, pointer;
+  //  cursor: url('assets/site/cursorIconBlueHover.png') 16 16, pointer;
    
 }
 
