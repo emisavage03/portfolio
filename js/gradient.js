@@ -1,5 +1,5 @@
 let gradientCircle;
-let on, check, font;
+let on, check, archivo;
 let circles = [];
 let myHues = [];
 let myLights = [];
@@ -8,11 +8,13 @@ let myLights = [];
 async function setup() {
   createCanvas(windowWidth, windowHeight);
 
- await document.fonts.load('24px Archivo');
-  textFont('Archivo');
-
-  textSize(24);
-
+ archivo = await loadFont(
+   'assets/Archivo-Italic.ttf'
+  );
+  textSize(14);
+  textFont(archivo);
+  textWeight(100);
+ 
   colorMode(HSL, 360, 100, 100, 1);
   textAlign(CENTER);
 
@@ -25,9 +27,9 @@ async function setup() {
 
 function draw() {
  // frameRate(30);
-  
-  background('white');
-  text(`click for ${check}`, width/2, height-100);
+
+ background('white');
+
 
   // Loop backwards so removing items doesn't skip any
   for (let i = circles.length - 1; i >= 0; i--) {
@@ -44,6 +46,8 @@ function draw() {
      circles.push(new GradientCircle(mouseX, mouseY, random(1, 7), random(8, 15), random(12, 15), innerColor, outerColor));
       }
   }
+
+  text(`click for ${check}`, width/2, height-25);
   
 }
 
@@ -62,7 +66,7 @@ class GradientCircle {
   constructor(x, y, r0, r1, r2, innerColor, outerColor) {
     this.x = x;
     this.y = y;
-    this.diff = random(0.5,2);
+    this.diff = random(0.5,3);
     this.r0 = r0*this.diff;           
     this.r1 = r1*this.diff;          
     this.r2 = r2*this.diff;
