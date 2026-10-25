@@ -2,142 +2,78 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/site/favicon.png" type="image/png">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-    </style>
-   
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-     <script src="js/cutep5.js"></script>
+    <script src="js/gradient.js"></script>
 
-    <title>Emi Savage</title>
+    <title>Emi Savage Portfolio</title>
 </head>
- <body>   
+
+ <body> 
+
 <nav>
-    <a><mark>portfolio of emi savage</mark></a>
+    <div style="font-weight: bold;"><h1>portfolio of emi savage</h1></div>
     <div>
-    <a href="https://www.instagram.com/emi_savage/" target="_blank"><mark>my instagram</mark></a>, <a href="http://linkedin.com/in/emi-savage-08599a321/" target="_blank"><mark>my linkedin</mark></a>,  
-    <a href="mailto:essavage@usc.edu" target="_blank"><mark>essavage@usc.edu</mark></a> 
+    <a href="https://www.instagram.com/emi_savage/" target="_blank">my instagram</a>, <a href="http://linkedin.com/in/emi-savage-08599a321/" target="_blank">my linkedin</a>,  
+    <a href="mailto:emisavage03@gmail.com" target="_blank">emisavage03@gmail.com</a> 
     </div>
 </nav>
 
-<div class="custom-cursor"></div>
-    <div id="main">
 
-        
-    <div class="about">
+  <div class="container">
+    <div class="info title" ><h2>ABOUT</h2></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center, rgb(255, 59, 157) 5%, rgb(160, 228, 0), rgba(255, 255, 255, 0) 50%);">
+      <p>I am Emi Savage. I am a media artist and undergrad student based in Los Angeles, CA.</p></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center, rgb(133, 99, 255) 25%, rgb(255, 123, 0), rgba(255, 255, 255, 0) 50%);">
+      <p>I make work that draws you in to the body, the web, and the things in your backyard.</p></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center, rgb(160, 228, 0) 10%, rgb(34, 145, 255), rgba(255, 255, 255, 0) 50%);">
+      <p>My main disciplines include creative code and graphic design. I also work with 3D modeling, game design, fabrication, and immersive installations.</p></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center,  rgb(255, 255, 95) 20%, rgb(255, 59, 157), rgba(255, 255, 255, 0) 50%);">
+      <p>I am currently earning my bachelor's degree in <a href="https://map.usc.edu/" target="_blank">Media Arts + Practice</a> at the University of Southern California.</p></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center, rgb(255, 123, 0) 15%, rgb(255, 255, 95), rgba(255, 255, 255, 0) 50%);">
+      <p>In my free time, I like to <a href="https://www.discogs.com/user/emisavage03/collection" target="_blank">collect CDs</a> and feel the sun on my back.</p></div>
+    <div class="info" style="background: no-repeat center/80% radial-gradient(circle at center, rgb(34, 145, 255) 30%, rgb(133, 99, 255), rgba(255, 255, 255, 0) 50%);">
+      <p>This portfolio site is <a href="https://github.com/emisavage03/portfolio" target="_blank">coded by hand</a> with <a href="https://p5js.org/" target="_blank">p5.js</a>.</p></div>
+  </div>
 
-            <div id="highlightcontainer">
-            <div class="invisble" id="zapgraphics"><img class="highlight" src="assets/highlights/zapGraphics.gif" alt="Zapathon Slidedeck"><br>graphic design, community engagement</div>
-            <div class="invisible" id="strudelws"><img class="highlight" src="assets/highlights/strudelworkshop.gif" alt="Workshop Documentation"><br>creative coding, community engagement</div>
-            <div class="invisible" id="lampshowimg" ><img class="highlight" src="assets/highlights/lampshowFrame.jpg" alt="Lamp Show still"> <br> filmmaking</div>
-            <div class="invisible" id="heavytrafficimg"><img class="highlight" src="assets/highlights/heavytrafficStill.jpg" alt="Heavy Traffic still"> <br> sound design, creative coding</div>
-            <div class="invisible" id="mmcgif"><img class="highlight" src="assets/highlights/mmcOPT.gif" alt="My Mother's Child Blanket"><br> textile media</div>
-            <div class="invisible" id="springfestgif"><img class="highlight" src="assets/highlights/springfestOPT.gif" alt="Springfest visualizer"><br>motion design</div>
-            <div class="invisible" id="diszapsterimg"><img class="highlight" src="assets/highlights/diszapterCARDS.jpg" alt="Diszapster Cards"><br>game design</div>
-            <div class="invisible" id="fuguegif"><img class="highlight" src="assets/highlights/fuguegif.gif" alt="Fugue for a Specimen homepage"><br>creative coding</div>
-            <div class="invisible" id="fishmusicimg"><img class="highlight" src="assets/highlights/fishmusic.jpg" alt="Fish Music p5 sketch"><br>creative coding</div>
-            <div class="invisible" id="sheddingimg"><img class="highlight" src="assets/highlights/sheddingStill.png" alt="Shedding still"><br>story development</div>
-            <div class="invisible" id="pinterestartgif"><img class="highlight" src="assets/highlights/pinterestGIFsquare.gif" alt="Pinterest post of mine"><br>social media</div>
-</div>
-            
+  <div class="container2">
+    <div class="info2 title"><h2>CREATIVE CODE</h2></div>
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/coaxialPoster.gif">
+      <!-- <p>Warbler Ensemble Visualizer</p> -->
+    </div>
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/fuguegif.gif">
+    </div>  
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/strudelworkshop.gif">
+    </div>
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/fishoutofwater.gif">
+    </div>
+  </div>
 
-        <div id="bio">
-        <p>I am Emi Savage. I am a media artist and undergrad student based in
-        Los Angeles, CA. By blending emerging technology and sensory experience, I make work that draws you in to the body, the web, and
-        the things in your backyard. My disciplines include creative code, writing, graphic design, tactile media, and video. 
-        I believe in thorough documentation to make my process and progress accessible to others.
-        <br><br> I am currently attending the <a href="https://map.usc.edu/" target="_blank"><mark>Media Arts + Practice</mark></a>
-        program at the University of Southern California. In
-        my free time, I like to <a href="https://www.discogs.com/user/emisavage03/collection" target="_blank"><mark>collect CDs</mark></a> and feel the sun on my back.
-        <br><br>This portfolio site is <a href="https://github.com/emisavage03/portfolio" target="_blank"><mark>open source</mark></a> and
-        built by hand with <a href="https://p5js.org/" target="_blank"><mark>p5.js</mark></a> and <a href="https://jquery.com/"
-            target="_blank"><mark>jQuery</mark></a>.
-        </p>
+  <div class="container2">
+    <div class="info2 title"><h2>DESIGN</h2></div>
+     <div class="info2">
+      <img class="highlight" src="assets/highlights/springfestVis.gif">
     </div>
-        </div>
-    
-<div class="project">
-    
-    <div id="projectscroll">
-   <h1 id="index">projects</h1>
-    <hr>
-    <div class="projectlist">
-    <div id="strudelwsrow"> <a class="row" href="projects/strudel.html">
-        <p class="left"><mark>Strudel workshop (2026)</mark></p>
-        <p class="right"><mark>creative club event to teach algorithmic music live coding</mark></p>
-        </a>
-        <hr>
+    <div class="info2">Frankencreature
     </div>
-        <div id="zaprow"> <a class="row" href="projects/zap.html">
-        <p class="left"><mark>ZAP marketing (2025-ongoing)</mark></p>
-        <p class="right"><mark>graphic design and other duties for USC's media arts RSO</mark></p>
-        </a>
-        <hr>
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/IML 420 (tvs) FINAL.png">
     </div>
-        <div id="lampshowrow"> <a class="row" href="projects/lampshow.html">
-        <p class="left"><mark>Lamp Show doc (2025)</mark></p> 
-        <p class="right"><mark>documentary showcasing the AUTOBODY autobody Lamp Show</mark></p>
-        </a>
-        <hr>
+    <div class="info2">
+      <img class="highlight" src="assets/highlights/ZAP 2026 Flyer NoQR.png">
     </div>
-        <div id="heavytrafficrow"> <a class="row" href="projects/heavytraffic.html">
-        <p class="left"><mark>Heavy Traffic (2025)</mark></p>
-        <p class="right"><mark>code and sound driven by live LA traffic cam data</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="springfestrow"> <a class="row" href="projects/springfest.html">
-        <p class="left"><mark>USC Springfest visualizer (2025)</mark></p>
-        <p class="right"><mark>concert visuals for USC Concerts with Don Toliver and Lyn Lapid</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="diszapsterrow"> <a class="row" href="projects/diszapster.html">
-        <p class="left"><mark>DisZAPster (2025)</mark></p>
-        <p class="right"><mark>a card game played with RGB color and arithmetic</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="fuguerow"> <a class="row" href="projects/fugue.html">
-        <p class="left"><mark>Fugue for a Specimen (2024)</mark></p>
-        <p class="right"><mark>website about the mirrored medical abuse of two 20th century Black women</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="fishmusicrow"> <a class="row" href="projects/fishmusic.html">
-        <p class="left"><mark>Fish Music + other p5 sketches (2024)</mark></p>
-        <p class="right"><mark>fun things i made while learning p5.js</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="sheddingrow"> <a class="row" href="projects/shedding.html">
-        <p class="left"><mark>Shedding (2023)</mark></p>
-        <p class="right"><mark>story for a short film about a boy, his uncle, and the things they lost in the shed</mark></p>
-        </a>
-        <hr>
-        </div>
-        <div id="pinterestrow"> <a class="row" href="projects/pinterest.html">
-        <p class="left"><mark>Pinterest art account (2021-2023)</mark></p>
-        <p class="right"><mark>my temporary stint as an art influencer</mark></p>
-        </a>
-        <hr> 
-        </div>
-    </div>
-        
-    </div>
-    </div>
-        
-    </div>
+  
+  </div>
 
-    
+<footer>click anywhere to turn background dots on/off</footer>
 
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/jquery.js"></script>
 </body>
 
 </html>

@@ -63,6 +63,11 @@ nav {
     top: 0;
 }
 
+nav h1 {
+    font-size: large;
+    margin: 0px;
+}
+
 footer { 
     justify-content: center;
     bottom: 0;
