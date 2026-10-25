@@ -32,9 +32,9 @@ function draw() {
     }
   }
 
-  if (on && frameCount % 3 === 0 && circles.length < MAX_CIRCLES) {
+  if (on && frameCount % 4 === 0 && circles.length < MAX_CIRCLES) {
     circles.push(new GradientCircle(
-      mouseX, mouseY,
+      random(width), random(height),
       random(1, 7), random(8, 15), random(12, 15),
       int(random(6)), int(random(6))
     ));
