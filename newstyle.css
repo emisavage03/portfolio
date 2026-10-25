@@ -6,7 +6,7 @@
 
 ::selection {
   background-color: none; /* Bright pink background */
-  color: rgb(253, 0, 173);           /* White text color */
+  color: deeppink;           /* White text color */
 }
 
 a {
@@ -39,22 +39,25 @@ body {
     font-style: normal;
     font-size: large;
     position: relative;
+    cursor: crosshair;
     /* border: 3px solid orangered; */
-    /* height: calc(100vh - 100px); */
-    /* border: 3px solid orchid; */
+}
+
+body:active {
+    cursor: none;
 }
 
 nav, footer {
     background-color: white;
     display: flex;
-    padding: 20px;
+    padding: 15px;
     position: fixed;
-    width: calc(100vw - 60px);
+    width: calc(100vw - 40px);
     left: 0;
     z-index: 2;
-    box-shadow: 0px 0px 8px 10px white;
-
+    box-shadow: 0px 0px 10px 5px deeppink;
 }
+
 nav { 
     justify-content: space-between;
     top: 0;
@@ -72,15 +75,16 @@ footer {
     height: 200px;
     /* align-content: center; */
     margin: 2%;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     gap: 30px;
-    /* align-items: stretch; */
+   
     /* border: 3px solid green; */
 }
 
-.container { margin-top: 120px; }
+.container { margin-top: 200px; }
 
-.container2 {margin-bottom: 100px;}
+/* 
+.container2 {margin-bottom: 100px;} */
 
 .container .info, .container2 .info2 {
     transition: all 1s ease;
@@ -88,17 +92,21 @@ footer {
     /* flex-wrap: wrap; */
     align-content: center;  
     justify-content: center;
-    border-radius: 10px;
-    /* border: 2px solid forestgreen; */
+    /* border-radius: 10px; */
+    /* border: 2px solid plum; */
+    width: auto;
     
 }
 
-.container .info { flex: 1;}
+.container .info { 
+    flex: 1;
+    min-width: 10px;
+    /* border: 3px red dashed; */
+}
 
 .container2 .info2 { 
     /* border: 3px dashed gold; */
     flex: 1.5;
-    width: 25%;
 }
 
 .container .info:hover, .container2 .info2:hover{
@@ -108,7 +116,7 @@ footer {
 
 .container .info.title, .container2 .info2.title {
    padding: 0px;
-   width: 0.5rem;
+   width: 5%;
    flex: 0.5;
    text-align: left;
    align-items: center;
@@ -130,9 +138,6 @@ footer {
     /* border: 3px solid hotpink; */
 }
 
-/* .container2 .info2 p {
-    margin-top: 5px;
-} */
 
 img.highlight {
     /* box-shadow: 0px 0px 10px 10px white; */
