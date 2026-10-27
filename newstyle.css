@@ -4,6 +4,16 @@
    font-weight: 100 900;
 }
 
+:root {
+    --accent: #ff1f8f;
+    --myOrange: #ff9c33;
+    --myYellow: #fff457;
+    --myGreen: #b6ff24;
+    --myBlue: #00b7ff;
+    --myPurple: #7c6bff;
+}
+
+
 ::selection {
   background-color: none; /* Bright pink background */
   color: deeppink;           /* White text color */
@@ -15,7 +25,7 @@ a {
 }
 
 a:hover {
-    background-color: deeppink;
+    background-color: var(--accent);
 }
 
 canvas {
@@ -30,6 +40,7 @@ p {
     text-wrap: balance;
     /* border: 3px solid darkcyan; */
     margin: 0px;
+    font-weight: 200;
 }
 
 body {  
@@ -39,7 +50,7 @@ body {
     font-style: normal;
     font-size: large;
     position: relative;
-    cursor: crosshair;
+    /* cursor: crosshair; */
     /* border: 3px solid orangered; */
 }
 
@@ -52,10 +63,12 @@ nav, footer {
     display: flex;
     padding: 15px;
     position: fixed;
-    width: calc(100vw - 40px);
+    width: calc(100% - 30px);
     left: 0;
-    z-index: 2;
-    box-shadow: 0px 0px 10px 5px deeppink;
+    /* right: 0; */
+    z-index: 1;
+    box-shadow: 0px 0px 10px 5px var(--accent);
+   
 }
 
 nav { 
@@ -71,33 +84,42 @@ nav h1 {
 footer { 
     justify-content: center;
     bottom: 0;
-    font-size: small;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
 }
 
-.container, .container2 {
+footer p {
+    padding: 0;
+}
+
+.container, .container2, .container3 {
     border-radius: 10px;
     display: flex;
     height: 200px;
     /* align-content: center; */
     margin: 2%;
     margin-bottom: 200px;
-    gap: 30px;
+    gap: 25px;
    
     /* border: 3px solid green; */
 }
 
 .container { margin-top: 200px; }
 
+.container3 { margin-top: 150px; height: 300px;}
+
 /* 
 .container2 {margin-bottom: 100px;} */
 
-.container .info, .container2 .info2 {
+.container .info, .container2 .info2, .container3 .info3 {
     transition: all 1s ease;
-    display: flex;
+    display: flex; 
     /* flex-wrap: wrap; */
     align-content: center;  
     justify-content: center;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     /* border: 2px solid plum; */
     width: auto;
     
@@ -109,32 +131,48 @@ footer {
     /* border: 3px red dashed; */
 }
 
-.container2 .info2 { 
+
+.container2 .info2, .container3 .info3 { 
     /* border: 3px dashed gold; */
     flex: 1.5;
 }
 
-.container .info:hover, .container2 .info2:hover{
+.container .info:hover, .container2 .info2:hover, .container3 .info3:hover{
     flex-grow: 3;
     transition: all 1s ease;
 }
 
-.container .info.title, .container2 .info2.title {
+
+
+.container .info.title, .container2 .info2.title, .container3 .info3.title {
    padding: 0px;
-   width: 5%;
-   flex: 0.5;
+   min-width: 5%;
    text-align: left;
    align-items: center;
    /* border: 3px dashed teal; */
-  
 }
 
-.container .info.title h2, .container2 .info2.title h2 {
+.container .info.title, .container3 .info3.title {
+    flex: 0.325;
+    /* color: blue;
+    border: dotted 5px dodgerblue; */
+}
+
+
+.container2 .info2.title {
+    flex: 0.25;
+    /* color: blue;
+    border: dotted 5px dodgerblue; */
+}
+
+
+.container .info.title h2, .container2 .info2.title h2, .container3 .info3.title h2{
     /* border: 3px solid yellow;  */
    font-size: xx-large;
    font-weight: bold;
    height: min-content;
    transform: rotate(-90deg);
+
 }
 
 .container .info p {
@@ -144,7 +182,7 @@ footer {
 }
 
 
-img.highlight {
+.highlight {
     /* box-shadow: 0px 0px 10px 10px white; */
     flex-basis: 100%;
     border-radius: 10px;
@@ -152,14 +190,27 @@ img.highlight {
     transition: all ease-in 1s;
     /* border: 2px solid salmon; */
     max-width: 100%;
-   
-  
 }
 
-/* img.highlight:hover {
-    filter: blur(0px);
-    transition: all ease-in 1s;
+/* .info2:hover .tooltip {
+    visibility: visible;
 } */
 
+.pink {
+    color: var(--accent);
+    text-decoration: underline;
+}
 
+.hide {
+    display: none;
+}
+
+.look {
+     box-shadow: 0px 0px 10px 5px var(--accent);
+}
+
+h1.project-title {
+    text-transform: uppercase;
+    margin-left: 100px;
+}
 

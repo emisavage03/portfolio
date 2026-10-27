@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
         { row: '#sheddingrow', div: '#sheddingimg' },
         { row: '#pinterestrow', div: '#pinterestartgif' }
     ];
-    
+
     // Initially hide all images
     hoverPairs.forEach(function(pair) {
         $(pair.div).hide().addClass('invisible');
@@ -33,4 +33,29 @@ jQuery(document).ready(function($) {
                 $(pair.div).addClass('invisible').hide();
             });
     });
+
+     const hoverPairs2 = [
+        {context: '.context1', content: '.content1'},
+        {context: '.context2', content: '.content2'}
+    ]
+
+    hoverPairs2.forEach(function(pair) {
+        $(pair.content)
+        .on('mouseenter', function() {
+            $(pair.context).addClass('look');
+        })
+        .on('mouseleave', function() {
+            $(pair.context).removeClass('look');
+        })
+
+        $(pair.context)
+        .on('mouseenter', function() {
+            $(pair.content).addClass('look');
+        })
+        .on('mouseleave', function() {
+            $(pair.content).removeClass('look');
+        })
+        
+    });
+    
 });

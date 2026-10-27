@@ -14,7 +14,7 @@ body {
   user-select: none;
  
   margin: 0px;
- // cursor: url('assets/site/cursorIconBlue.png') 16 16, auto;
+  /* cursor: url('assets/site/cursorIconBlue.png') 16 16, auto; */
   color: black;
   left: 0;
   top: 0;

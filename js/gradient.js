@@ -2,6 +2,9 @@ let archivo;
 let circles = [];
 let palette = [];
 let on = false;
+let footer;
+let show;
+let hide;
 
 let MAX_CIRCLES = 400;
 
@@ -11,8 +14,12 @@ async function setup() {
 
   colorMode(HSL, 360, 100, 100, 1);
 
-  let hues = [330, 253, 78, 60, 29, 210];
-  let light = [62, 69, 45, 69, 50, 57];
+  footer = select('footer');
+  show = select('p.hide');
+  hide = select('p.show');
+
+  let hues = [330, 31, 56, 80, 197, 247];
+  let light = [56, 60, 67, 57, 50, 71];
 
   // build css color string for each color
   for (let i = 0; i < hues.length; i++) {
@@ -32,17 +39,38 @@ function draw() {
     }
   }
 
-  if (on && frameCount % 4 === 0 && circles.length < MAX_CIRCLES) {
+
+
+  if (on && circles.length < MAX_CIRCLES) {
+      circles.push(new GradientCircle(
+      mouseX, mouseY,
+      random(1, 7), random(8, 15), random(12, 15),
+      int(random(6)), int(random(6))
+    ));
+
+    if (frameCount % 2 === 0 ){
+
+    
+
     circles.push(new GradientCircle(
       random(width), random(height),
       random(1, 7), random(8, 15), random(12, 15),
       int(random(6)), int(random(6))
     ));
+    }
+
+ 
   }
 }
 
 function mousePressed() {
   on = !on;
+
+  footer.toggleClass('pink');
+  show.toggleClass('hide');
+  hide.toggleClass('hide');
+
+
 }
 
 class GradientCircle {
