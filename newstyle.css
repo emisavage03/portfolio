@@ -13,7 +13,6 @@
     --myPurple: #7c6bff;
 }
 
-
 ::selection {
   background-color: none; /* Bright pink background */
   color: deeppink;           /* White text color */
@@ -50,7 +49,6 @@ body {
     font-style: normal;
     font-size: large;
     position: relative;
-    /* cursor: crosshair; */
     /* border: 3px solid orangered; */
 }
 
@@ -84,34 +82,53 @@ nav h1 {
 footer { 
     justify-content: center;
     bottom: 0;
-    font-size: medium;
-    font-weight: bold;
+    /* font-size: medium; */
     display: flex;
     align-items: baseline;
 }
 
 footer p {
     padding: 0;
+    font-weight: bold;
 }
 
 .container, .container2, .container3 {
     border-radius: 10px;
     display: flex;
-    height: 200px;
     /* align-content: center; */
     margin: 2%;
     margin-bottom: 200px;
     gap: 25px;
-   
     /* border: 3px solid green; */
 }
 
-.container { margin-top: 200px; }
+.container { height: 200px; margin-top: 200px; }
+
+.container2 { height: 200px; }
 
 .container3 { margin-top: 150px; height: 300px;}
 
-/* 
-.container2 {margin-bottom: 100px;} */
+.container p {
+    min-height: 200px;
+    transition: font-weight 0.4s ease;
+}
+
+.container3 p, .container2 p {
+    min-height: 300px;
+    transition: font-weight 0.4s ease;
+}
+
+.container p, .container2 p, .container3 p {
+    padding: 20px;
+    align-self: center; 
+    align-content: center;
+    /* border: 3px solid hotpink; */
+}
+
+.container p:hover, .container2 p:hover, .container3 p:hover {
+   font-weight: bold;
+   transition: 0.4s ease;
+}
 
 .container .info, .container2 .info2, .container3 .info3 {
     transition: all 1s ease;
@@ -131,8 +148,7 @@ footer p {
     /* border: 3px red dashed; */
 }
 
-
-.container2 .info2, .container3 .info3 { 
+.container2 .info2, .container3 .info3{ 
     /* border: 3px dashed gold; */
     flex: 1.5;
 }
@@ -141,7 +157,6 @@ footer p {
     flex-grow: 3;
     transition: all 1s ease;
 }
-
 
 
 .container .info.title, .container2 .info2.title, .container3 .info3.title {
@@ -166,19 +181,13 @@ footer p {
 }
 
 
-.container .info.title h2, .container2 .info2.title h2, .container3 .info3.title h2{
+.container .info.title h2, .container2 .info2.title h2, .container3 .info3.title h2 {
     /* border: 3px solid yellow;  */
    font-size: xx-large;
    font-weight: bold;
    height: min-content;
    transform: rotate(-90deg);
 
-}
-
-.container .info p {
-    padding: 20px;
-    align-self: center;
-    /* border: 3px solid hotpink; */
 }
 
 
@@ -198,19 +207,19 @@ footer p {
 
 .pink {
     color: var(--accent);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .hide {
     display: none;
 }
 
-.look {
-     box-shadow: 0px 0px 10px 5px var(--accent);
+.highlight:hover, .look {
+    box-shadow: 0px 0px 10px 5px var(--accent);
+    transition: box-shadow 0.4s ease;
 }
-
+/* 
 h1.project-title {
     text-transform: uppercase;
     margin-left: 100px;
-}
-
+} */
