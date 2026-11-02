@@ -49,7 +49,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-size: large;
+    /* font-size: large; */
     position: relative;
     cursor: default;
     /* border: 3px solid orangered; */
@@ -76,7 +76,7 @@ nav {
     top: 0;
     padding: 15px;
     /* align-content: stretch; */
-    align-items: center;
+    align-items: baseline;
     /* display: flex; */
     /* border: 3px dotted pink; */
 }
@@ -124,21 +124,28 @@ footer {
 .container4 {
     border-radius: 10px;
     display: flex;
-    /* align-content: center; */
+    /* align-items: center; */
     margin: 2%;
     margin-bottom: 200px;
     gap: 25px;
-    justify-self: center;
+    /* justify-self: center; */
     /* border: 3px solid green; */
+    
 }
 
 .container {
+    align-items: center;
     height: 200px;
     margin-top: 200px;
 }
 
 .container2 {
     height: 200px;
+}
+
+.container3 {
+     align-items: center;
+     height: 300px;
 }
 
 .container3,
@@ -166,6 +173,7 @@ footer {
     padding: 20px;
     /* align-self: center; */
     align-content: center;
+    /* max-width: fit-content; */
     /* border: 3px solid hotpink; */
 }
 
@@ -185,8 +193,8 @@ footer {
     transition: all 1s ease;
     display: flex;
     /* flex-wrap: wrap; */
-    align-content: center;
-    justify-content: center;
+    /* align-content: center; */
+    /* justify-content: center; */
     border-radius: 10px;
     /* border: 2px solid plum; */
     width: auto;
@@ -221,14 +229,15 @@ footer {
 .container4 .info4.title {
     padding: 0px;
     min-width: 5%;
-    text-align: left;
     align-items: center;
+    height: 100%;
+    
     /* border: 3px dashed teal; */
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    /* justify-content: flex-end; */
-
+    justify-content: center;
+ 
 }
 
 .container .info.title,
@@ -251,28 +260,28 @@ footer {
 .container2 .info2.title h2,
 .container3 .info3.title h2,
 .container4 .info4.title h2 {
+    /* display: block; */
     /* border: 3px solid yellow;  */
     font-size: xx-large;
     font-weight: bold;
-    height: min-content;
+    max-height: min-content;
     writing-mode: sideways-lr;
     padding: 0px;
-    /* text-orientation: sideways-right; */
-    /* transform: rotate(-90deg); */
-
+    text-wrap: balance;
+    /* max-width: 100%; */
+   
+    /* text-align: left; */
+   / /* align-self: center; */
+   
 }
 
 .info.title h3,
 .info2.title h3,
 .info3.title h3,
 .info4.title h3 {
-    /* padding: 0px; */
-    /* border: 3px solid khaki; */
-    /* pointer-events: none; */
     max-width: min-content;
     margin: 10px;
-    /* font-style: italic; */
-
+    /* border: 2px dashed orchid; */
 }
 
 
@@ -286,9 +295,6 @@ footer {
     max-width: 100%;
 }
 
-/* .info2:hover .tooltip {
-    visibility: visible;
-} */
 
 .pink {
     color: var(--accent);
