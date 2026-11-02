@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Archivo';
-  src: url('assets/Archivo.ttf') format('truetype');
-   font-weight: 100 900;
+    font-family: 'Archivo';
+    src: url('assets/Archivo.ttf') format('truetype');
+    font-weight: 100 900;
 }
 
 :root {
@@ -10,17 +10,19 @@
     --myYellow: #fff457;
     --myGreen: #b6ff24;
     --myBlue: #00b7ff;
-    --myPurple: #7c6bff;
+    --myPurple: #9385FF;
 }
 
 ::selection {
-  background-color: none; /* Bright pink background */
-  color: deeppink;           /* White text color */
+    background-color: none;
+    /* Bright pink background */
+    color: deeppink;
+    /* White text color */
 }
 
 a {
     color: black;
-    background-color:  transparent;
+    background-color: transparent;
 }
 
 a:hover {
@@ -42,13 +44,14 @@ p {
     font-weight: 200;
 }
 
-body {  
+body {
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     font-size: large;
     position: relative;
+    cursor: default;
     /* border: 3px solid orangered; */
 }
 
@@ -56,118 +59,181 @@ body:active {
     cursor: none;
 }
 
-nav, footer {
+nav,
+footer {
     background-color: white;
     display: flex;
-    padding: 15px;
     position: fixed;
     width: calc(100% - 30px);
     left: 0;
     /* right: 0; */
-    z-index: 1;
-    box-shadow: 0px 0px 10px 5px var(--accent);
-   
+    z-index: 2;
+    box-shadow: 0px 0px 10px 10px white;
 }
 
-nav { 
+nav {
     justify-content: space-between;
     top: 0;
+    padding: 15px;
+    /* align-content: stretch; */
+    align-items: center;
+    /* display: flex; */
+    /* border: 3px dotted pink; */
 }
 
 nav h1 {
-    font-size: large;
+    font-size: xx-large;
     margin: 0px;
+    text-decoration: none;
 }
 
-footer { 
-    justify-content: center;
+nav h1:hover {
+    background-color: var(--accent);
+}
+
+footer {
+    height: 10px;
     bottom: 0;
-    /* font-size: medium; */
-    display: flex;
-    align-items: baseline;
 }
 
-footer p {
-    padding: 0;
-    font-weight: bold;
+@keyframes pulse {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
-.container, .container2, .container3 {
+.pulseAnim {
+    animation: pulse 2s linear infinite alternate;
+}
+
+#click mark {
+    background-color: transparent;
+}
+
+.container,
+.container2,
+.container3,
+.container4 {
     border-radius: 10px;
     display: flex;
     /* align-content: center; */
     margin: 2%;
     margin-bottom: 200px;
     gap: 25px;
+    justify-self: center;
     /* border: 3px solid green; */
 }
 
-.container { height: 200px; margin-top: 200px; }
+.container {
+    height: 200px;
+    margin-top: 200px;
+}
 
-.container2 { height: 200px; }
+.container2 {
+    height: 200px;
+}
 
-.container3 { margin-top: 150px; height: 300px;}
+.container3,
+.container4 {
+    margin-top: 150px;
+    height: 300px;
+}
 
 .container p {
     min-height: 200px;
-    transition: font-weight 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-.container3 p, .container2 p {
+.container3 p,
+.container2 p,
+.container4 p {
     min-height: 300px;
-    transition: font-weight 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-.container p, .container2 p, .container3 p {
+.container p,
+.container2 p,
+.container3 p,
+.container4 p {
     padding: 20px;
-    align-self: center; 
+    /* align-self: center; */
     align-content: center;
     /* border: 3px solid hotpink; */
 }
 
-.container p:hover, .container2 p:hover, .container3 p:hover {
-   font-weight: bold;
-   transition: 0.4s ease;
+.container p:hover,
+.container2 p:hover,
+.container3 p:hover,
+.container4 p:hover {
+    /* font-weight: bold; */
+    font-size: xx-large;
+    transition: 0.4s ease;
 }
 
-.container .info, .container2 .info2, .container3 .info3 {
+.container .info,
+.container2 .info2,
+.container3 .info3,
+.container4 .info4 {
     transition: all 1s ease;
-    display: flex; 
+    display: flex;
     /* flex-wrap: wrap; */
-    align-content: center;  
+    align-content: center;
     justify-content: center;
     border-radius: 10px;
     /* border: 2px solid plum; */
     width: auto;
-    
+
 }
 
-.container .info { 
+.container .info {
     flex: 1;
     min-width: 10px;
     /* border: 3px red dashed; */
 }
 
-.container2 .info2, .container3 .info3{ 
+.container2 .info2,
+.container3 .info3,
+.container4 .info4 {
     /* border: 3px dashed gold; */
     flex: 1.5;
 }
 
-.container .info:hover, .container2 .info2:hover, .container3 .info3:hover{
+.container .info:hover,
+.container2 .info2:hover,
+.container3 .info3:hover,
+.container4 .info4:hover {
     flex-grow: 3;
     transition: all 1s ease;
 }
 
 
-.container .info.title, .container2 .info2.title, .container3 .info3.title {
-   padding: 0px;
-   min-width: 5%;
-   text-align: left;
-   align-items: center;
-   /* border: 3px dashed teal; */
+.container .info.title,
+.container2 .info2.title,
+.container3 .info3.title,
+.container4 .info4.title {
+    padding: 0px;
+    min-width: 5%;
+    text-align: left;
+    align-items: center;
+    /* border: 3px dashed teal; */
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    /* justify-content: flex-end; */
+
 }
 
-.container .info.title, .container3 .info3.title {
+.container .info.title,
+.container3 .info3.title,
+.container4 .info4.title {
     flex: 0.325;
     /* color: blue;
     border: dotted 5px dodgerblue; */
@@ -181,12 +247,31 @@ footer p {
 }
 
 
-.container .info.title h2, .container2 .info2.title h2, .container3 .info3.title h2 {
+.container .info.title h2,
+.container2 .info2.title h2,
+.container3 .info3.title h2,
+.container4 .info4.title h2 {
     /* border: 3px solid yellow;  */
-   font-size: xx-large;
-   font-weight: bold;
-   height: min-content;
-   transform: rotate(-90deg);
+    font-size: xx-large;
+    font-weight: bold;
+    height: min-content;
+    writing-mode: sideways-lr;
+    padding: 0px;
+    /* text-orientation: sideways-right; */
+    /* transform: rotate(-90deg); */
+
+}
+
+.info.title h3,
+.info2.title h3,
+.info3.title h3,
+.info4.title h3 {
+    /* padding: 0px; */
+    /* border: 3px solid khaki; */
+    /* pointer-events: none; */
+    max-width: min-content;
+    margin: 10px;
+    /* font-style: italic; */
 
 }
 
@@ -210,16 +295,137 @@ footer p {
     /* text-decoration: underline; */
 }
 
-.hide {
+mark.hide {
     display: none;
 }
 
-.highlight:hover, .look {
+.highlight:hover,
+.look {
     box-shadow: 0px 0px 10px 5px var(--accent);
     transition: box-shadow 0.4s ease;
 }
-/* 
-h1.project-title {
-    text-transform: uppercase;
-    margin-left: 100px;
-} */
+
+
+@media only screen and (max-width: 900px) {
+
+    nav {
+        gap: 10px;
+        justify-content: space-around;
+        /* border: 2px solid var(--myGreen); */
+    }
+
+    #click {
+        text-align: center;
+    }
+
+    #socials {
+        text-align: right;
+    }
+
+    nav p {
+        font-size: small;
+    }
+
+    nav h1 {
+        font-size: larger;
+    }
+
+    .container,
+    .container2,
+    .container3,
+    .container4 {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        border: 2px solid red;
+        height: fit-content;
+        width: 95%;
+        margin-bottom: 0px;
+    }
+
+    .container,
+    .container2,
+    .container3 {
+        gap: 10px;
+    }
+
+
+    .container,
+    .container2 {
+        margin-top: 100px;
+    }
+
+    .container3 {
+        grid-template-columns: auto 1fr 1fr;
+    }
+
+    .container4 {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        gap: 0px;
+    }
+
+
+    .container .info.title,
+    .container2 .info2.title,
+    .container3 .info3.title {
+        grid-row: 1 / span 3;
+        width: max-content;
+        /* border: 2px dashed brown; */
+        padding: 0px;
+        min-height: 400px;
+        align-self: center;
+    }
+
+    .container .info.title h2,
+    .container2 .info2.title h2,
+    .container3 .info3.title h2 {
+        margin: 0px;
+        min-height: max-content;
+    }
+
+    .container p,
+    .container2 p,
+    .container3 p {
+        padding: 10px;
+        justify-self: center;
+        /* border: 3px solid hotpink; */
+        min-height: 150px;
+        font-size: small;
+        transition: all 1s ease;
+    }
+
+    .container p:hover,
+    .container2 p:hover,
+    .container3 p:hover {
+        font-size: larger;
+        transition: all 0.6s ease;
+    }
+
+    .container2 .info2,
+    .container3 .info3,
+    .container4 .info4 {
+        transition: all 1s ease;
+        align-items: center;
+        min-height: 200px;
+    }
+
+    .highlight {
+        max-width: 95%;
+        height: 150px;
+        margin: 10px;
+        transition: all 1s ease;
+    }
+
+    .highlight:hover {
+        height: 250px;
+        transition: all 0.6s ease;
+    }
+
+    .info2 a:hover,
+    .info3 a:hover {
+        background-color: transparent;
+    }
+
+
+
+}

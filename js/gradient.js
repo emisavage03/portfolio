@@ -2,7 +2,7 @@ let archivo;
 let circles = [];
 let palette = [];
 let on = false;
-let footer;
+let click;
 let show;
 let hide;
 
@@ -14,12 +14,12 @@ async function setup() {
 
   colorMode(HSL, 360, 100, 100, 1);
 
-  footer = select('footer');
-  show = select('p.hide');
-  hide = select('p.show');
+  click = select('#click');
+  show = select('.hide');
+  hide = select('.show');
 
   let hues = [330, 31, 56, 80, 197, 247];
-  let light = [56, 60, 67, 57, 50, 71];
+  let light = [56, 60, 67, 57, 50, 76];
 
   // build css color string for each color
   for (let i = 0; i < hues.length; i++) {
@@ -39,8 +39,6 @@ function draw() {
     }
   }
 
-
-
   if (on && circles.length < MAX_CIRCLES) {
       circles.push(new GradientCircle(
       mouseX, mouseY,
@@ -50,8 +48,6 @@ function draw() {
 
     if (frameCount % 2 === 0 ){
 
-    
-
     circles.push(new GradientCircle(
       random(width), random(height),
       random(1, 7), random(8, 15), random(12, 15),
@@ -59,17 +55,16 @@ function draw() {
     ));
     }
 
- 
   }
 }
 
 function mousePressed() {
   on = !on;
 
-  footer.toggleClass('pink');
+  click.toggleClass('pink');
+  click.removeClass('pulseAnim');
   show.toggleClass('hide');
   hide.toggleClass('hide');
-
 
 }
 

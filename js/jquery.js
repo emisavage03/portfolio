@@ -36,7 +36,9 @@ jQuery(document).ready(function($) {
 
      const hoverPairs2 = [
         {context: '.context1', content: '.content1'},
-        {context: '.context2', content: '.content2'}
+        {context: '.context2', content: '.content2'},
+        {context: '.context3', content: '.content3'},
+        {context: '.context4', content: '.content4'},
     ]
 
     hoverPairs2.forEach(function(pair) {
