@@ -177,8 +177,15 @@ footer {
     /* border: 3px solid hotpink; */
 }
 
+.container2 p{
+    font-size: xx-large;
+}
+
+.container2 p:hover {
+    font-size: xx-small;
+}
 .container p:hover,
-.container2 p:hover,
+/* .container2 p:hover, */
 .container3 p:hover,
 .container4 p:hover {
     /* font-weight: bold; */
@@ -214,8 +221,9 @@ footer {
     flex: 1.5;
 }
 
+
 .container .info:hover,
-.container2 .info2:hover,
+/* .container2 .info2:hover, */
 .container3 .info3:hover,
 .container4 .info4:hover {
     flex-grow: 3;

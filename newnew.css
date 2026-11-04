@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('assets/Archivo.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+:root {
+    --accent: #ff1f8f;
+    --myOrange: #ff9c33;
+    --myYellow: #fff457;
+    --myGreen: #b6ff24;
+    --myBlue: #00b7ff;
+    --myPurple: #9385FF;
+}
+
+::selection {
+    background-color: none;
+    color: deeppink;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    cursor: default;
+    /* border: 3px solid orangered; */
+}
+
+a {
+    color: black;
+    background-color: transparent;
+}
+
+
+.highlight {
+    /* background-color: red; */
+    width: 75%;
+    max-height: 30vh;
+    filter: opacity(0);
+    /* transition: all 1s ease; */
+}
+
+.highlight:hover {
+    filter: opacity(1);
+}
+
+.base {
+    display: grid;
+    /* border: 2px dashed violet; */
+    height: calc(100vh - 16px);
+}
+
+.base h2,
+.base a,
+.base p {
+    place-self: center;
+}
+
+.base h2 {
+    width: min-content;
+    font-weight: 200;
+    text-wrap: balance;
+}
+
+.base p {
+    /* border: 2px solid pink; */
+    margin: auto;
+    text-wrap: balance;
+    padding: 10%;
+    width: 40%;
+    height: 80%;
+    align-content: center;
+    text-align: justify;
+    transition: all 1s ease;
+    line-height: 95%;
+}
+
+.base p:hover {
+    font-size: x-large;
+    width: 80%;
+    line-height: 100%;
+    transition: all 1s ease;
+}
+
+.two a:hover,
+.four a:hover,
+.six a:hover,
+.eight a:hover,
+.ten a:hover,
+.twelve a:hover,
+.fourteen a:hover,
+.fifteen a:hover {
+    background-color: var(--accent);
+}
+
+a.one,
+a.three,
+a.seven,
+a.eleven,
+a.five,
+a.nine,
+a.thirteen,
+a.fifteen {
+    display: grid;
+    place-items: center;
+    /* border: 2px dashed blue; */
+}
+
+.eight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eight h1 {
+    font-weight: 200;
+    font-size: 350%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.eight a {
+    align-self: flex-end;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 70%;
+    }
+
+    .highlight {
+        max-height: 20vh;
+    }
+
+    .base {
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(5, 30%);
+    }
+
+    .base p:hover {
+        font-size: large;
+
+    }
+
+
+    .one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .two {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .three {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .four {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .five {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .six {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .seven {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .eight {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .nine {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .ten {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .eleven {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .twelve {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+    .thirteen {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .fourteen {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .fifteen {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 80%;
+    }
+
+    .base {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .two {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .three {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .four {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .five {
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+
+    .six {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .seven {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .eight {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .nine {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .ten {
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+
+    .eleven {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .twelve {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .thirteen {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .fourteen {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+
+    .fifteen {
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 100%;
+    }
+}
