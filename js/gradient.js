@@ -12,7 +12,7 @@ async function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(30);
 
-  colorMode(HSL, 360, 100, 100, 1);
+  colorMode(OKLCH, 360, 100, 100, 1);
 
   click = select('#click');
   show = select('.hide');
@@ -46,14 +46,14 @@ function draw() {
       int(random(6)), int(random(6))
     ));
 
-    // if (frameCount % 2 === 0 ){
+    if (frameCount % 2 === 0 ){
 
-    // circles.push(new GradientCircle(
-    //   random(width), random(height),
-    //   random(1, 7), random(8, 15), random(12, 15),
-    //   int(random(6)), int(random(6))
-    // ));
-    // }
+    circles.push(new GradientCircle(
+      random(width), random(height),
+      random(1, 7), random(8, 15), random(12, 15),
+      int(random(6)), int(random(6))
+    ));
+    }
 
   }
 }

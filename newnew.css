@@ -18,13 +18,32 @@
     color: deeppink;
 }
 
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+    /* color: oklch(100% 100% 0); */
+    /* display: none; */
+}
+
 body {
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     cursor: default;
     /* border: 3px solid orangered; */
+}
+
+h1 {
+    transition: 0.4s color linear;
+}
+
+h1:hover {
+    cursor: help;
 }
 
 a {
@@ -59,7 +78,7 @@ a {
 
 .base h2 {
     width: min-content;
-    font-weight: 200;
+    font-weight: 300;
     text-wrap: balance;
 }
 
@@ -76,13 +95,14 @@ a {
     line-height: 95%;
 }
 
-.base p:hover {
+.base p:hover, .base p.aboutHover {
     font-size: x-large;
     width: 80%;
     line-height: 100%;
     transition: all 1s ease;
+    cursor: help;
 }
-
+ 
 .two a:hover,
 .four a:hover,
 .six a:hover,
@@ -114,15 +134,22 @@ a.fifteen {
 }
 
 .eight h1 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 350%;
     margin: 0;
     margin-bottom: 5%;
+
 }
 
 .eight a {
     align-self: flex-end;
 }
+
+.look {
+    color: var(--accent);
+    transition: all .4s ease;
+}
+
 
 
 
@@ -316,6 +343,10 @@ a.fifteen {
     body {
         font-size: 90%;
     }
+
+    .base p:hover {
+    font-size: x-large;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

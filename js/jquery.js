@@ -84,4 +84,18 @@ jQuery(document).ready(function ($) {
 
 
     });
+
+
+    const about = '.two, .four, .six, .ten, .twelve, .fourteen';
+$("h1").hover(
+    function () {
+        $(".base p").addClass('aboutHover');
+        $(this).addClass("look");
+    },
+    function () {
+        $(".base p").removeClass('aboutHover');
+        $(this).removeClass("look");
+    }
+);
+
 });
